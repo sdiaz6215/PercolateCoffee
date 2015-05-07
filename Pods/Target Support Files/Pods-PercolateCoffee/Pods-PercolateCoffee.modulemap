@@ -1,0 +1,6 @@
+framework module Pods_PercolateCoffee {
+  umbrella header "Pods-PercolateCoffee-umbrella.h"
+
+  export *
+  module * { export * }
+}

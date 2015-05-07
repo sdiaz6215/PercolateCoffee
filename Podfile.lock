@@ -1,0 +1,19 @@
+PODS:
+  - LlamaKit (0.1.1)
+  - Mantle (2.0):
+    - Mantle/extobjc (= 2.0)
+  - Mantle/extobjc (2.0)
+  - ReactiveCocoa (3.0.0-alpha.1):
+    - LlamaKit (= 0.1.1)
+    - ReactiveCocoa/UI (= 3.0.0-alpha.1)
+
+DEPENDENCIES:
+  - Mantle (~> 2.0)
+  - ReactiveCocoa (= 3.0.0-alpha.1)
+
+SPEC CHECKSUMS:
+  LlamaKit: 25f47a933b6580a6fc159d95adb2e2953c7012e9
+  Mantle: 17de73ef929db2234d76fde2aacfb89ab11c61e8
+  ReactiveCocoa: 3b5e351bb3ab233d71f0329f36a7400af30d9783
+
+COCOAPODS: 0.37.1

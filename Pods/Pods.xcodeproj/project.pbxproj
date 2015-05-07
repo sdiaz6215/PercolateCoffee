@@ -1,0 +1,1309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A1E9BEB376DD6573A381B72 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFBA7889BC1410A70F6A4B8 /* EXTRuntimeExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0CB8F464A40234AC1C66005A /* Pods-PercolateCoffee-LlamaKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B295EDF7132E41683C8051E3 /* Pods-PercolateCoffee-LlamaKit-dummy.m */; };
+		121137A9B1372E6E1881B260 /* NSDictionary+MTLJSONKeyPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 21908C1E7826AFA2B89FDF81 /* NSDictionary+MTLJSONKeyPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1713F2385440A4F7FEFDE050 /* MTLTransformerErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = 366AE24A8E2C9D8472CD7342 /* MTLTransformerErrorHandling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18B5017D01E645241FAAD39D /* NSError+MTLModelException.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF3C5F6F26ED820224327F0 /* NSError+MTLModelException.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		18C74AF8B8CF34D59372136C /* Pods-PercolateCoffeeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE923DBD7149B2E4A3EEA19 /* Pods-PercolateCoffeeTests-dummy.m */; };
+		18EBF6E47F6AD87D2EBEC92B /* MTLValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = A57A099F33CF9E7E19013562 /* MTLValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19A7B3A881960C615DB770D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1E1DD5D6B9D9AB2A25DC71 /* Foundation.framework */; };
+		20CE1F36226736FA700BFB19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1E1DD5D6B9D9AB2A25DC71 /* Foundation.framework */; };
+		20E9E3FE72967DC53EC5A0C0 /* NSError+MTLModelException.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF3C5F6F26ED820224327F0 /* NSError+MTLModelException.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2389122A29F255525A5B307D /* Mantle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2794187D680D066F6C0A5861 /* Mantle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		264433BF08D668F3F82D3DDA /* NSObject+MTLComparisonAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C22ECC23ACEC207E508FCE98 /* NSObject+MTLComparisonAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2918EE572250FE3247078D1A /* Pods-PercolateCoffeeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B39A88713732E47C837358B9 /* Pods-PercolateCoffeeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C01D899340B20AC47B8EE01 /* MTLTransformerErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DDD5ACCE1ACE229C151BE3 /* MTLTransformerErrorHandling.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		30F4B757983B84F6EC727D1E /* NSObject+MTLComparisonAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C22ECC23ACEC207E508FCE98 /* NSObject+MTLComparisonAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		342EAE367110FA0D6F538C41 /* Pods-PercolateCoffeeTests-Mantle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 484CA25D9A27F537ABD707AE /* Pods-PercolateCoffeeTests-Mantle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		344B3D06E1113934636383D7 /* MTLJSONAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A007E749C6E7A132B7A39FFA /* MTLJSONAdapter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		346FFA6D0B53E41D23D45B50 /* MTLModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A1D106CF2382D7B4047316 /* MTLModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		354C534B0841B4AA212B532C /* EXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 3896F29B40CEECC4060EB949 /* EXTKeyPathCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BCBD5893EB1F1E672E4C0EE /* NSDictionary+MTLManipulationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E8BCE0919DADADE9DC8FC90D /* NSDictionary+MTLManipulationAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D210469F492E9DDA34A7CC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1E1DD5D6B9D9AB2A25DC71 /* Foundation.framework */; };
+		4230994D16D7A71E071216F4 /* MTLValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E98441BE2BC21F7A11A14BD /* MTLValueTransformer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4955E40A7171F936AC027974 /* MTLModel+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 988FDC255D2E8D8EF5DF795E /* MTLModel+NSCoding.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4A67C31EF4535B3052C4681C /* Pods-PercolateCoffee-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F109B6335E28BB5BE74B4D39 /* Pods-PercolateCoffee-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50DE5F9DB6CA83BF26C770E7 /* MTLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDF26725C4F9D9A288A20B8 /* MTLModel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		519A24CDE90BEC376BEA9DDD /* Pods-PercolateCoffee-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8090137118C774ED515960F6 /* Pods-PercolateCoffee-dummy.m */; };
+		537612E20BD0F78DAAB1A4B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1E1DD5D6B9D9AB2A25DC71 /* Foundation.framework */; };
+		570F3F5143346B15136E2F02 /* MTLReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 728B1B2CE39259F846D82378 /* MTLReflection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5E6B801994F15CBFB6EDEE58 /* MTLTransformerErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DDD5ACCE1ACE229C151BE3 /* MTLTransformerErrorHandling.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		634BA0370B18FBA305586E6D /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E1C8CD6201C3EDC1842A66 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6573660187AA9DA55DC935DE /* EXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 3896F29B40CEECC4060EB949 /* EXTKeyPathCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6904FBBD0526D34DB18EFC11 /* MTLJSONAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F8F71B65BCFCB80E35A0E5C /* MTLJSONAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CE497C7F67572F60A36338A /* NSArray+MTLManipulationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AA412F51D39C638BA0A6049 /* NSArray+MTLManipulationAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E6E69A92E6D90E03C984C68 /* EXTRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6937B1925C0BA5F9A50920F2 /* EXTRuntimeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77C328A46242174A43A08AF6 /* Pods-PercolateCoffee-Mantle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4960AED0E3C62F68EABD697B /* Pods-PercolateCoffee-Mantle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A33F64767E8F7EF235DE543 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1E1DD5D6B9D9AB2A25DC71 /* Foundation.framework */; };
+		7FC64449ED537995D0382EE8 /* MTLReflection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2182FD974B5CCA1C9C0EE790 /* MTLReflection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80A8C9BEF4448E9C5D0F7781 /* NSValueTransformer+MTLInversionAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B26EBDFF844E6720264E511B /* NSValueTransformer+MTLInversionAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8121558FFE08353BAE71C6CB /* EXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A04EDCD7036878F0CC39729 /* EXTScope.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81E7466004AEC48428CF78E8 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = A40E7F4520B34A3AE1CCFF0C /* EXTScope.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		82D82951339AA786D4610382 /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 758B8346D3CBCE4037E39B47 /* metamacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83F1C73E812AF78D61629FC2 /* NSError+MTLModelException.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A9B712307EF3400D7B58564 /* NSError+MTLModelException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8551F5C8F2D67368337DFB70 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = EA4B29CB4D6539DEA0CAEF14 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F4466EFF44DD111F722DA4F /* Pods-PercolateCoffee-Mantle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 067E2EFC65DE5044A6DA194A /* Pods-PercolateCoffee-Mantle-dummy.m */; };
+		927F6B612D0EA3C1F2AFDB8A /* EXTRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6937B1925C0BA5F9A50920F2 /* EXTRuntimeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92A79C032904D27C0B74A6BC /* MTLJSONAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F8F71B65BCFCB80E35A0E5C /* MTLJSONAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9783F8949FBF1445EE155C81 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E1C8CD6201C3EDC1842A66 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9C2E2CE8D9FC56AADDAF448E /* Pods-PercolateCoffee-LlamaKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3F954FC1170E128256E1004 /* Pods-PercolateCoffee-LlamaKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FAB93E0C5A6ACFAD879E2DA /* NSValueTransformer+MTLInversionAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B26EBDFF844E6720264E511B /* NSValueTransformer+MTLInversionAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A2482EBB0780A17E37DD88B5 /* NSValueTransformer+MTLInversionAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D089610BEDB3B65C49D7E39E /* NSValueTransformer+MTLInversionAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4C0887D62736E14ABE3E7FD /* Pods-PercolateCoffeeTests-LlamaKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E73FC26BEE0E89A31DF0C2 /* Pods-PercolateCoffeeTests-LlamaKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB807C271F72A72F86D3C5CD /* NSDictionary+MTLJSONKeyPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 21908C1E7826AFA2B89FDF81 /* NSDictionary+MTLJSONKeyPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5EA35084D6F476A2D038CF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6534BE66E8C70E54A75671C /* Result.swift */; };
+		AE038FB10C940DCC7B054D16 /* NSObject+MTLComparisonAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B12FDCAF286DD9B999596E2F /* NSObject+MTLComparisonAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEFC36450357717EF1944FAD /* NSDictionary+MTLMappingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FF369A4C5182692A54541CBF /* NSDictionary+MTLMappingAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AF27323E80B5F3CE58B03340 /* MTLReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 728B1B2CE39259F846D82378 /* MTLReflection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B019AC6F9A3A444E02793D5F /* NSArray+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F202F483C8A49596AB42B5 /* NSArray+MTLManipulationAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B0A27FC458015E56C1D79756 /* NSDictionary+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E337860A57EE1E612EA68C /* NSDictionary+MTLManipulationAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B274F144C96936BD48FB9A0A /* MTLValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = A57A099F33CF9E7E19013562 /* MTLValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2C3FCA99C90E4E6963FBDDE /* NSArray+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F202F483C8A49596AB42B5 /* NSArray+MTLManipulationAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B3E91CDE874B9634A4A1BFDE /* MTLModel+NSCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D643E73DA118687B74D6EF3 /* MTLModel+NSCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8BC9802354B94B5CDB358AD /* MTLJSONAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A007E749C6E7A132B7A39FFA /* MTLJSONAdapter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BAF4AB3AC136B42AB09684E2 /* NSDictionary+MTLMappingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A4E417A0DB01001B60F10380 /* NSDictionary+MTLMappingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD9156A04212A2166C97EEBA /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = A40E7F4520B34A3AE1CCFF0C /* EXTScope.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BDA529DE87B42CFBEDB74C48 /* Mantle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2794187D680D066F6C0A5861 /* Mantle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17C70DAE459622A162D910F /* NSDictionary+MTLMappingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A4E417A0DB01001B60F10380 /* NSDictionary+MTLMappingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8B483040DC42AC1A67650C8 /* MTLValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E98441BE2BC21F7A11A14BD /* MTLValueTransformer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C8CF292C52E19561F9A54A43 /* Pods-PercolateCoffeeTests-Mantle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A750C0C3FBA37CFC209B5FE6 /* Pods-PercolateCoffeeTests-Mantle-dummy.m */; };
+		CC3B5CEC9619A96BBDDCE6CC /* MTLModel+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 988FDC255D2E8D8EF5DF795E /* MTLModel+NSCoding.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D4495CE6DDE7E28D836E03D0 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = EA4B29CB4D6539DEA0CAEF14 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5E3E98C6B6D2186C39486B2 /* MTLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDF26725C4F9D9A288A20B8 /* MTLModel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DD5A361D9D1F8FC5AB071019 /* NSDictionary+MTLMappingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FF369A4C5182692A54541CBF /* NSDictionary+MTLMappingAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E03EDD4667457F763058344A /* NSArray+MTLManipulationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AA412F51D39C638BA0A6049 /* NSArray+MTLManipulationAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1B4D63B8AB73F1A0FEFE109 /* MTLTransformerErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = 366AE24A8E2C9D8472CD7342 /* MTLTransformerErrorHandling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E33EAD45DBBF2EC07D09C0D0 /* Pods-PercolateCoffeeTests-LlamaKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 552CFB75A02530041CD8D08B /* Pods-PercolateCoffeeTests-LlamaKit-dummy.m */; };
+		E454EA8E7E8392041BFC6CB4 /* MTLModel+NSCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D643E73DA118687B74D6EF3 /* MTLModel+NSCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E96BE277EBACCC471C4DF571 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFBA7889BC1410A70F6A4B8 /* EXTRuntimeExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E98CDB03D27ECB0E6A59D27E /* EXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A04EDCD7036878F0CC39729 /* EXTScope.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE398E409A24D2A51877539F /* NSDictionary+MTLManipulationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E8BCE0919DADADE9DC8FC90D /* NSDictionary+MTLManipulationAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE5A651522A327D82EB651D1 /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 758B8346D3CBCE4037E39B47 /* metamacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF15BB26EB3116ED4973900D /* MTLReflection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2182FD974B5CCA1C9C0EE790 /* MTLReflection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1F22F378F3A636531D03FBC /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6534BE66E8C70E54A75671C /* Result.swift */; };
+		F24D48F8820D9C37A0795495 /* NSError+MTLModelException.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A9B712307EF3400D7B58564 /* NSError+MTLModelException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F35E80DEDBE59D3A0BF2FFEB /* NSValueTransformer+MTLInversionAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D089610BEDB3B65C49D7E39E /* NSValueTransformer+MTLInversionAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6ADC5B89A5B7B9439766348 /* NSDictionary+MTLJSONKeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 3809C6EA219F436BE74DFCCD /* NSDictionary+MTLJSONKeyPath.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F740F27E3D2E24D90D22168C /* NSDictionary+MTLJSONKeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 3809C6EA219F436BE74DFCCD /* NSDictionary+MTLJSONKeyPath.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F76A7C10E785D628C0F32501 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1E1DD5D6B9D9AB2A25DC71 /* Foundation.framework */; };
+		FC296543BE97AE9F488DD424 /* MTLModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A1D106CF2382D7B4047316 /* MTLModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCF7D3C692A17B30F643027B /* NSObject+MTLComparisonAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B12FDCAF286DD9B999596E2F /* NSObject+MTLComparisonAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE6E22E0F3C1DD5446EE4C18 /* NSDictionary+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E337860A57EE1E612EA68C /* NSDictionary+MTLManipulationAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		080C297C29685B2388A4100D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89E19FDBDD0E66503A5840FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5BC4ADB0FF342C4D6CF007B;
+			remoteInfo = "Pods-PercolateCoffeeTests-Mantle";
+		};
+		33D36767FF9B018B89CF14BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89E19FDBDD0E66503A5840FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C871F63BED1044A10E545D24;
+			remoteInfo = "Pods-PercolateCoffeeTests-LlamaKit";
+		};
+		A4E76F67BB58CEE0DAF0B6C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89E19FDBDD0E66503A5840FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29DB98C2BD0CEC1B88B58A19;
+			remoteInfo = "Pods-PercolateCoffee-LlamaKit";
+		};
+		BE24D9D997F551ACF8332A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89E19FDBDD0E66503A5840FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B40924F433CB697BAACDC87E;
+			remoteInfo = "Pods-PercolateCoffee-Mantle";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		067E2EFC65DE5044A6DA194A /* Pods-PercolateCoffee-Mantle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PercolateCoffee-Mantle-dummy.m"; sourceTree = "<group>"; };
+		0BE923DBD7149B2E4A3EEA19 /* Pods-PercolateCoffeeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PercolateCoffeeTests-dummy.m"; sourceTree = "<group>"; };
+		1E3112B81085D2E6698FB71E /* Pods-PercolateCoffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PercolateCoffee.release.xcconfig"; sourceTree = "<group>"; };
+		2182FD974B5CCA1C9C0EE790 /* MTLReflection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLReflection.h; path = Mantle/MTLReflection.h; sourceTree = "<group>"; };
+		21908C1E7826AFA2B89FDF81 /* NSDictionary+MTLJSONKeyPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLJSONKeyPath.h"; path = "Mantle/NSDictionary+MTLJSONKeyPath.h"; sourceTree = "<group>"; };
+		23B11CA49F50EEA4994BBB32 /* Pods-PercolateCoffeeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PercolateCoffeeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		24DC600683D1197BC25B94BB /* Pods_PercolateCoffee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PercolateCoffee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2555E49FE72B0BBAC5E386B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25A3EC2747D8A28D03527A3E /* Pods-PercolateCoffeeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PercolateCoffeeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		264E313278FD95541CB897C1 /* Pods-PercolateCoffee-LlamaKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PercolateCoffee-LlamaKit.modulemap"; sourceTree = "<group>"; };
+		27449E1329FDAB32D3CBFCFF /* Pods-PercolateCoffeeTests-Mantle.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PercolateCoffeeTests-Mantle.xcconfig"; path = "../Pods-PercolateCoffeeTests-Mantle/Pods-PercolateCoffeeTests-Mantle.xcconfig"; sourceTree = "<group>"; };
+		2794187D680D066F6C0A5861 /* Mantle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Mantle.h; path = Mantle/Mantle.h; sourceTree = "<group>"; };
+		2AA412F51D39C638BA0A6049 /* NSArray+MTLManipulationAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MTLManipulationAdditions.h"; path = "Mantle/NSArray+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
+		2ECDF89583EC4C28E2B719F2 /* Pods-PercolateCoffee-Mantle-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PercolateCoffee-Mantle-Private.xcconfig"; sourceTree = "<group>"; };
+		307AD2A8E001B09464E9F368 /* Pods-PercolateCoffeeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PercolateCoffeeTests-frameworks.sh"; sourceTree = "<group>"; };
+		31ACFD7B9A67FB1F2CAB44BA /* LlamaKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LlamaKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E337860A57EE1E612EA68C /* NSDictionary+MTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MTLManipulationAdditions.m"; path = "Mantle/NSDictionary+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
+		366AE24A8E2C9D8472CD7342 /* MTLTransformerErrorHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLTransformerErrorHandling.h; path = Mantle/MTLTransformerErrorHandling.h; sourceTree = "<group>"; };
+		3809C6EA219F436BE74DFCCD /* NSDictionary+MTLJSONKeyPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MTLJSONKeyPath.m"; path = "Mantle/NSDictionary+MTLJSONKeyPath.m"; sourceTree = "<group>"; };
+		3896F29B40CEECC4060EB949 /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTKeyPathCoding.h; path = Mantle/extobjc/EXTKeyPathCoding.h; sourceTree = "<group>"; };
+		3A9B712307EF3400D7B58564 /* NSError+MTLModelException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+MTLModelException.h"; path = "Mantle/NSError+MTLModelException.h"; sourceTree = "<group>"; };
+		3CB4D3CDE4E45AEF8E7ADBCC /* Pods-PercolateCoffeeTests-LlamaKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PercolateCoffeeTests-LlamaKit.xcconfig"; path = "../Pods-PercolateCoffeeTests-LlamaKit/Pods-PercolateCoffeeTests-LlamaKit.xcconfig"; sourceTree = "<group>"; };
+		3E98441BE2BC21F7A11A14BD /* MTLValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLValueTransformer.m; path = Mantle/MTLValueTransformer.m; sourceTree = "<group>"; };
+		40CA3AC1C0EFFFDF6D321DEA /* Pods-PercolateCoffee-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PercolateCoffee-acknowledgements.markdown"; sourceTree = "<group>"; };
+		440BC4A7849634FF9DA38D6B /* Pods-PercolateCoffee-Mantle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PercolateCoffee-Mantle.modulemap"; sourceTree = "<group>"; };
+		451E04604389BE7C29DB402D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484CA25D9A27F537ABD707AE /* Pods-PercolateCoffeeTests-Mantle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-PercolateCoffeeTests-Mantle-umbrella.h"; path = "../Pods-PercolateCoffeeTests-Mantle/Pods-PercolateCoffeeTests-Mantle-umbrella.h"; sourceTree = "<group>"; };
+		4960AED0E3C62F68EABD697B /* Pods-PercolateCoffee-Mantle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PercolateCoffee-Mantle-umbrella.h"; sourceTree = "<group>"; };
+		523FBF8360803CD2FA5EE109 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-PercolateCoffeeTests-LlamaKit/Info.plist"; sourceTree = "<group>"; };
+		552CFB75A02530041CD8D08B /* Pods-PercolateCoffeeTests-LlamaKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-PercolateCoffeeTests-LlamaKit-dummy.m"; path = "../Pods-PercolateCoffeeTests-LlamaKit/Pods-PercolateCoffeeTests-LlamaKit-dummy.m"; sourceTree = "<group>"; };
+		5A04EDCD7036878F0CC39729 /* EXTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTScope.h; path = Mantle/extobjc/EXTScope.h; sourceTree = "<group>"; };
+		5E8B9D268C1620DF5DE9B490 /* Pods-PercolateCoffeeTests-Mantle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-PercolateCoffeeTests-Mantle.modulemap"; path = "../Pods-PercolateCoffeeTests-Mantle/Pods-PercolateCoffeeTests-Mantle.modulemap"; sourceTree = "<group>"; };
+		63EF5455E4A79AA94253A806 /* Pods-PercolateCoffeeTests-LlamaKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-PercolateCoffeeTests-LlamaKit.modulemap"; path = "../Pods-PercolateCoffeeTests-LlamaKit/Pods-PercolateCoffeeTests-LlamaKit.modulemap"; sourceTree = "<group>"; };
+		6872E03F867DE3BA30C7E0FF /* Pods-PercolateCoffeeTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PercolateCoffeeTests-environment.h"; sourceTree = "<group>"; };
+		6937B1925C0BA5F9A50920F2 /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTRuntimeExtensions.h; path = Mantle/extobjc/EXTRuntimeExtensions.h; sourceTree = "<group>"; };
+		6FA1EC22ADC22ED7164F1419 /* Pods-PercolateCoffee-Mantle.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PercolateCoffee-Mantle.xcconfig"; sourceTree = "<group>"; };
+		728B1B2CE39259F846D82378 /* MTLReflection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLReflection.m; path = Mantle/MTLReflection.m; sourceTree = "<group>"; };
+		7382545C415D7C84343C5360 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		73E1C8CD6201C3EDC1842A66 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+MTLPredefinedTransformerAdditions.m"; path = "Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.m"; sourceTree = "<group>"; };
+		74FA66135060F0E9A33FE2EA /* LlamaKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LlamaKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		758B8346D3CBCE4037E39B47 /* metamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = metamacros.h; path = Mantle/extobjc/metamacros.h; sourceTree = "<group>"; };
+		7A5A58F26DBAD73A6FDC8FB8 /* Pods-PercolateCoffeeTests-Mantle-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PercolateCoffeeTests-Mantle-Private.xcconfig"; path = "../Pods-PercolateCoffeeTests-Mantle/Pods-PercolateCoffeeTests-Mantle-Private.xcconfig"; sourceTree = "<group>"; };
+		7C8C0E1B5BC8A1F8DDFD1C8B /* Pods-PercolateCoffee-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PercolateCoffee-resources.sh"; sourceTree = "<group>"; };
+		7F8F71B65BCFCB80E35A0E5C /* MTLJSONAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLJSONAdapter.h; path = Mantle/MTLJSONAdapter.h; sourceTree = "<group>"; };
+		8090137118C774ED515960F6 /* Pods-PercolateCoffee-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PercolateCoffee-dummy.m"; sourceTree = "<group>"; };
+		8159637DE4966F93A29FAA45 /* Pods-PercolateCoffee-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PercolateCoffee-environment.h"; sourceTree = "<group>"; };
+		83D22043C8453D937E182029 /* Pods-PercolateCoffeeTests-Mantle-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-PercolateCoffeeTests-Mantle-prefix.pch"; path = "../Pods-PercolateCoffeeTests-Mantle/Pods-PercolateCoffeeTests-Mantle-prefix.pch"; sourceTree = "<group>"; };
+		8A44E638B0A7F663EFC82F46 /* Pods-PercolateCoffeeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PercolateCoffeeTests-resources.sh"; sourceTree = "<group>"; };
+		8D643E73DA118687B74D6EF3 /* MTLModel+NSCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MTLModel+NSCoding.h"; path = "Mantle/MTLModel+NSCoding.h"; sourceTree = "<group>"; };
+		91DDD5ACCE1ACE229C151BE3 /* MTLTransformerErrorHandling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLTransformerErrorHandling.m; path = Mantle/MTLTransformerErrorHandling.m; sourceTree = "<group>"; };
+		988FDC255D2E8D8EF5DF795E /* MTLModel+NSCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MTLModel+NSCoding.m"; path = "Mantle/MTLModel+NSCoding.m"; sourceTree = "<group>"; };
+		99A1D106CF2382D7B4047316 /* MTLModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLModel.h; path = Mantle/MTLModel.h; sourceTree = "<group>"; };
+		9CFBA7889BC1410A70F6A4B8 /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTRuntimeExtensions.m; path = Mantle/extobjc/EXTRuntimeExtensions.m; sourceTree = "<group>"; };
+		A007E749C6E7A132B7A39FFA /* MTLJSONAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLJSONAdapter.m; path = Mantle/MTLJSONAdapter.m; sourceTree = "<group>"; };
+		A08A7E00C225712C9F4FDD03 /* Pods-PercolateCoffee-LlamaKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PercolateCoffee-LlamaKit-prefix.pch"; sourceTree = "<group>"; };
+		A2B4B3F3F1BA512728A79CA2 /* Pods-PercolateCoffee-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PercolateCoffee-frameworks.sh"; sourceTree = "<group>"; };
+		A40E7F4520B34A3AE1CCFF0C /* EXTScope.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTScope.m; path = Mantle/extobjc/EXTScope.m; sourceTree = "<group>"; };
+		A4E417A0DB01001B60F10380 /* NSDictionary+MTLMappingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLMappingAdditions.h"; path = "Mantle/NSDictionary+MTLMappingAdditions.h"; sourceTree = "<group>"; };
+		A57A099F33CF9E7E19013562 /* MTLValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLValueTransformer.h; path = Mantle/MTLValueTransformer.h; sourceTree = "<group>"; };
+		A6534BE66E8C70E54A75671C /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = LlamaKit/Result.swift; sourceTree = "<group>"; };
+		A7298AB7E05819B7227913A6 /* Pods-PercolateCoffee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PercolateCoffee.debug.xcconfig"; sourceTree = "<group>"; };
+		A750C0C3FBA37CFC209B5FE6 /* Pods-PercolateCoffeeTests-Mantle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-PercolateCoffeeTests-Mantle-dummy.m"; path = "../Pods-PercolateCoffeeTests-Mantle/Pods-PercolateCoffeeTests-Mantle-dummy.m"; sourceTree = "<group>"; };
+		ACB6831B7C965791E1297E23 /* Pods-PercolateCoffeeTests-LlamaKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PercolateCoffeeTests-LlamaKit-Private.xcconfig"; path = "../Pods-PercolateCoffeeTests-LlamaKit/Pods-PercolateCoffeeTests-LlamaKit-Private.xcconfig"; sourceTree = "<group>"; };
+		AF1E1DD5D6B9D9AB2A25DC71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B12FDCAF286DD9B999596E2F /* NSObject+MTLComparisonAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MTLComparisonAdditions.h"; path = "Mantle/NSObject+MTLComparisonAdditions.h"; sourceTree = "<group>"; };
+		B26EBDFF844E6720264E511B /* NSValueTransformer+MTLInversionAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+MTLInversionAdditions.m"; path = "Mantle/NSValueTransformer+MTLInversionAdditions.m"; sourceTree = "<group>"; };
+		B295EDF7132E41683C8051E3 /* Pods-PercolateCoffee-LlamaKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PercolateCoffee-LlamaKit-dummy.m"; sourceTree = "<group>"; };
+		B39A88713732E47C837358B9 /* Pods-PercolateCoffeeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PercolateCoffeeTests-umbrella.h"; sourceTree = "<group>"; };
+		B4F202F483C8A49596AB42B5 /* NSArray+MTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MTLManipulationAdditions.m"; path = "Mantle/NSArray+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
+		BAD27809CE13CF020A6345F5 /* Pods-PercolateCoffeeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PercolateCoffeeTests.release.xcconfig"; sourceTree = "<group>"; };
+		C22ECC23ACEC207E508FCE98 /* NSObject+MTLComparisonAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MTLComparisonAdditions.m"; path = "Mantle/NSObject+MTLComparisonAdditions.m"; sourceTree = "<group>"; };
+		C2E73FC26BEE0E89A31DF0C2 /* Pods-PercolateCoffeeTests-LlamaKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-PercolateCoffeeTests-LlamaKit-umbrella.h"; path = "../Pods-PercolateCoffeeTests-LlamaKit/Pods-PercolateCoffeeTests-LlamaKit-umbrella.h"; sourceTree = "<group>"; };
+		C636B788130ED43D7703DC85 /* Pods-PercolateCoffee-LlamaKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PercolateCoffee-LlamaKit.xcconfig"; sourceTree = "<group>"; };
+		C712547CDBFD315E2482AF8A /* Pods-PercolateCoffee-Mantle-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PercolateCoffee-Mantle-prefix.pch"; sourceTree = "<group>"; };
+		C80EC3BEF2F2198FF9ADE9B4 /* Pods-PercolateCoffee-LlamaKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PercolateCoffee-LlamaKit-Private.xcconfig"; sourceTree = "<group>"; };
+		C82584F34B7A6DAEE4E9A23A /* Pods-PercolateCoffee.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PercolateCoffee.modulemap"; sourceTree = "<group>"; };
+		D089610BEDB3B65C49D7E39E /* NSValueTransformer+MTLInversionAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+MTLInversionAdditions.h"; path = "Mantle/NSValueTransformer+MTLInversionAdditions.h"; sourceTree = "<group>"; };
+		D3F954FC1170E128256E1004 /* Pods-PercolateCoffee-LlamaKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PercolateCoffee-LlamaKit-umbrella.h"; sourceTree = "<group>"; };
+		D4C3E28B2881459003D6F59D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF1E5E28DD4EA2764006968 /* Pods-PercolateCoffee-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PercolateCoffee-acknowledgements.plist"; sourceTree = "<group>"; };
+		E8BCE0919DADADE9DC8FC90D /* NSDictionary+MTLManipulationAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLManipulationAdditions.h"; path = "Mantle/NSDictionary+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
+		EA4B29CB4D6539DEA0CAEF14 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+MTLPredefinedTransformerAdditions.h"; path = "Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.h"; sourceTree = "<group>"; };
+		ECF3C5F6F26ED820224327F0 /* NSError+MTLModelException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+MTLModelException.m"; path = "Mantle/NSError+MTLModelException.m"; sourceTree = "<group>"; };
+		EEDF26725C4F9D9A288A20B8 /* MTLModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLModel.m; path = Mantle/MTLModel.m; sourceTree = "<group>"; };
+		EFDD75F4B89C050A33822302 /* Pods-PercolateCoffeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PercolateCoffeeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0DE85B5B018277FAE01C1C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F109B6335E28BB5BE74B4D39 /* Pods-PercolateCoffee-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PercolateCoffee-umbrella.h"; sourceTree = "<group>"; };
+		F29F1387F459C5A2B1DD9739 /* Pods-PercolateCoffeeTests-LlamaKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-PercolateCoffeeTests-LlamaKit-prefix.pch"; path = "../Pods-PercolateCoffeeTests-LlamaKit/Pods-PercolateCoffeeTests-LlamaKit-prefix.pch"; sourceTree = "<group>"; };
+		F51EDDE416D6386C9D202576 /* Mantle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mantle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA748C9641C6E1FA6FC8DF4D /* Mantle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mantle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD27E24A616E9502C6DF43F /* Pods_PercolateCoffeeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PercolateCoffeeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4793301513EF6DAF372908 /* Pods-PercolateCoffeeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PercolateCoffeeTests.modulemap"; sourceTree = "<group>"; };
+		FC0950550E2B5308A57C21C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-PercolateCoffeeTests-Mantle/Info.plist"; sourceTree = "<group>"; };
+		FF369A4C5182692A54541CBF /* NSDictionary+MTLMappingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MTLMappingAdditions.m"; path = "Mantle/NSDictionary+MTLMappingAdditions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AAA4656C9D0F86ED70FEAA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20CE1F36226736FA700BFB19 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23FA650A0A5B2D5090D5DD44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A33F64767E8F7EF235DE543 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63DB12FCAEC9D06FEA6E1936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A7B3A881960C615DB770D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4EC238EAB627924D87862BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76A7C10E785D628C0F32501 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAFC1232EBF3DEA5161FC57F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				537612E20BD0F78DAAB1A4B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0BF4B9F0982C835CCDA1E21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D210469F492E9DDA34A7CC4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0259CBA6FE86EC56EBC9DD4B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2555E49FE72B0BBAC5E386B2 /* Info.plist */,
+				FC0950550E2B5308A57C21C1 /* Info.plist */,
+				440BC4A7849634FF9DA38D6B /* Pods-PercolateCoffee-Mantle.modulemap */,
+				6FA1EC22ADC22ED7164F1419 /* Pods-PercolateCoffee-Mantle.xcconfig */,
+				2ECDF89583EC4C28E2B719F2 /* Pods-PercolateCoffee-Mantle-Private.xcconfig */,
+				067E2EFC65DE5044A6DA194A /* Pods-PercolateCoffee-Mantle-dummy.m */,
+				C712547CDBFD315E2482AF8A /* Pods-PercolateCoffee-Mantle-prefix.pch */,
+				4960AED0E3C62F68EABD697B /* Pods-PercolateCoffee-Mantle-umbrella.h */,
+				5E8B9D268C1620DF5DE9B490 /* Pods-PercolateCoffeeTests-Mantle.modulemap */,
+				27449E1329FDAB32D3CBFCFF /* Pods-PercolateCoffeeTests-Mantle.xcconfig */,
+				7A5A58F26DBAD73A6FDC8FB8 /* Pods-PercolateCoffeeTests-Mantle-Private.xcconfig */,
+				A750C0C3FBA37CFC209B5FE6 /* Pods-PercolateCoffeeTests-Mantle-dummy.m */,
+				83D22043C8453D937E182029 /* Pods-PercolateCoffeeTests-Mantle-prefix.pch */,
+				484CA25D9A27F537ABD707AE /* Pods-PercolateCoffeeTests-Mantle-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-PercolateCoffee-Mantle";
+			sourceTree = "<group>";
+		};
+		348F8FFE36897FF45E949161 = {
+			isa = PBXGroup;
+			children = (
+				7382545C415D7C84343C5360 /* Podfile */,
+				F4C6AFB1BD9E5B0EED7FD4DA /* Frameworks */,
+				809A9000D352B4906EAC1C40 /* Pods */,
+				C598F0D951C75C357C1B9F9E /* Products */,
+				35D89487FA2F01823DDF5820 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		35D89487FA2F01823DDF5820 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D7B6FD8AB01A09B1863E034 /* Pods-PercolateCoffee */,
+				51A650DDCB1F68A1F7D8FD0E /* Pods-PercolateCoffeeTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		51A650DDCB1F68A1F7D8FD0E /* Pods-PercolateCoffeeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0DE85B5B018277FAE01C1C4 /* Info.plist */,
+				FB4793301513EF6DAF372908 /* Pods-PercolateCoffeeTests.modulemap */,
+				23B11CA49F50EEA4994BBB32 /* Pods-PercolateCoffeeTests-acknowledgements.markdown */,
+				25A3EC2747D8A28D03527A3E /* Pods-PercolateCoffeeTests-acknowledgements.plist */,
+				0BE923DBD7149B2E4A3EEA19 /* Pods-PercolateCoffeeTests-dummy.m */,
+				6872E03F867DE3BA30C7E0FF /* Pods-PercolateCoffeeTests-environment.h */,
+				307AD2A8E001B09464E9F368 /* Pods-PercolateCoffeeTests-frameworks.sh */,
+				8A44E638B0A7F663EFC82F46 /* Pods-PercolateCoffeeTests-resources.sh */,
+				B39A88713732E47C837358B9 /* Pods-PercolateCoffeeTests-umbrella.h */,
+				EFDD75F4B89C050A33822302 /* Pods-PercolateCoffeeTests.debug.xcconfig */,
+				BAD27809CE13CF020A6345F5 /* Pods-PercolateCoffeeTests.release.xcconfig */,
+			);
+			name = "Pods-PercolateCoffeeTests";
+			path = "Target Support Files/Pods-PercolateCoffeeTests";
+			sourceTree = "<group>";
+		};
+		5D7B6FD8AB01A09B1863E034 /* Pods-PercolateCoffee */ = {
+			isa = PBXGroup;
+			children = (
+				451E04604389BE7C29DB402D /* Info.plist */,
+				C82584F34B7A6DAEE4E9A23A /* Pods-PercolateCoffee.modulemap */,
+				40CA3AC1C0EFFFDF6D321DEA /* Pods-PercolateCoffee-acknowledgements.markdown */,
+				DEF1E5E28DD4EA2764006968 /* Pods-PercolateCoffee-acknowledgements.plist */,
+				8090137118C774ED515960F6 /* Pods-PercolateCoffee-dummy.m */,
+				8159637DE4966F93A29FAA45 /* Pods-PercolateCoffee-environment.h */,
+				A2B4B3F3F1BA512728A79CA2 /* Pods-PercolateCoffee-frameworks.sh */,
+				7C8C0E1B5BC8A1F8DDFD1C8B /* Pods-PercolateCoffee-resources.sh */,
+				F109B6335E28BB5BE74B4D39 /* Pods-PercolateCoffee-umbrella.h */,
+				A7298AB7E05819B7227913A6 /* Pods-PercolateCoffee.debug.xcconfig */,
+				1E3112B81085D2E6698FB71E /* Pods-PercolateCoffee.release.xcconfig */,
+			);
+			name = "Pods-PercolateCoffee";
+			path = "Target Support Files/Pods-PercolateCoffee";
+			sourceTree = "<group>";
+		};
+		74701660A49FFE5818C3793D /* ReactiveCocoa */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReactiveCocoa;
+			sourceTree = "<group>";
+		};
+		809A9000D352B4906EAC1C40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0AFAD01EDF4B90B8AB9B690 /* LlamaKit */,
+				9695F98865ADEF5AE0F24685 /* Mantle */,
+				74701660A49FFE5818C3793D /* ReactiveCocoa */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9695F98865ADEF5AE0F24685 /* Mantle */ = {
+			isa = PBXGroup;
+			children = (
+				7F8F71B65BCFCB80E35A0E5C /* MTLJSONAdapter.h */,
+				A007E749C6E7A132B7A39FFA /* MTLJSONAdapter.m */,
+				99A1D106CF2382D7B4047316 /* MTLModel.h */,
+				EEDF26725C4F9D9A288A20B8 /* MTLModel.m */,
+				8D643E73DA118687B74D6EF3 /* MTLModel+NSCoding.h */,
+				988FDC255D2E8D8EF5DF795E /* MTLModel+NSCoding.m */,
+				2182FD974B5CCA1C9C0EE790 /* MTLReflection.h */,
+				728B1B2CE39259F846D82378 /* MTLReflection.m */,
+				366AE24A8E2C9D8472CD7342 /* MTLTransformerErrorHandling.h */,
+				91DDD5ACCE1ACE229C151BE3 /* MTLTransformerErrorHandling.m */,
+				A57A099F33CF9E7E19013562 /* MTLValueTransformer.h */,
+				3E98441BE2BC21F7A11A14BD /* MTLValueTransformer.m */,
+				2794187D680D066F6C0A5861 /* Mantle.h */,
+				2AA412F51D39C638BA0A6049 /* NSArray+MTLManipulationAdditions.h */,
+				B4F202F483C8A49596AB42B5 /* NSArray+MTLManipulationAdditions.m */,
+				21908C1E7826AFA2B89FDF81 /* NSDictionary+MTLJSONKeyPath.h */,
+				3809C6EA219F436BE74DFCCD /* NSDictionary+MTLJSONKeyPath.m */,
+				E8BCE0919DADADE9DC8FC90D /* NSDictionary+MTLManipulationAdditions.h */,
+				35E337860A57EE1E612EA68C /* NSDictionary+MTLManipulationAdditions.m */,
+				A4E417A0DB01001B60F10380 /* NSDictionary+MTLMappingAdditions.h */,
+				FF369A4C5182692A54541CBF /* NSDictionary+MTLMappingAdditions.m */,
+				3A9B712307EF3400D7B58564 /* NSError+MTLModelException.h */,
+				ECF3C5F6F26ED820224327F0 /* NSError+MTLModelException.m */,
+				B12FDCAF286DD9B999596E2F /* NSObject+MTLComparisonAdditions.h */,
+				C22ECC23ACEC207E508FCE98 /* NSObject+MTLComparisonAdditions.m */,
+				D089610BEDB3B65C49D7E39E /* NSValueTransformer+MTLInversionAdditions.h */,
+				B26EBDFF844E6720264E511B /* NSValueTransformer+MTLInversionAdditions.m */,
+				EA4B29CB4D6539DEA0CAEF14 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */,
+				73E1C8CD6201C3EDC1842A66 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */,
+				0259CBA6FE86EC56EBC9DD4B /* Support Files */,
+				BE95CDC7C6FFF508523DFAF9 /* extobjc */,
+			);
+			path = Mantle;
+			sourceTree = "<group>";
+		};
+		9FCA0562B8D47FDB7098ED72 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4C3E28B2881459003D6F59D /* Info.plist */,
+				523FBF8360803CD2FA5EE109 /* Info.plist */,
+				264E313278FD95541CB897C1 /* Pods-PercolateCoffee-LlamaKit.modulemap */,
+				C636B788130ED43D7703DC85 /* Pods-PercolateCoffee-LlamaKit.xcconfig */,
+				C80EC3BEF2F2198FF9ADE9B4 /* Pods-PercolateCoffee-LlamaKit-Private.xcconfig */,
+				B295EDF7132E41683C8051E3 /* Pods-PercolateCoffee-LlamaKit-dummy.m */,
+				A08A7E00C225712C9F4FDD03 /* Pods-PercolateCoffee-LlamaKit-prefix.pch */,
+				D3F954FC1170E128256E1004 /* Pods-PercolateCoffee-LlamaKit-umbrella.h */,
+				63EF5455E4A79AA94253A806 /* Pods-PercolateCoffeeTests-LlamaKit.modulemap */,
+				3CB4D3CDE4E45AEF8E7ADBCC /* Pods-PercolateCoffeeTests-LlamaKit.xcconfig */,
+				ACB6831B7C965791E1297E23 /* Pods-PercolateCoffeeTests-LlamaKit-Private.xcconfig */,
+				552CFB75A02530041CD8D08B /* Pods-PercolateCoffeeTests-LlamaKit-dummy.m */,
+				F29F1387F459C5A2B1DD9739 /* Pods-PercolateCoffeeTests-LlamaKit-prefix.pch */,
+				C2E73FC26BEE0E89A31DF0C2 /* Pods-PercolateCoffeeTests-LlamaKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-PercolateCoffee-LlamaKit";
+			sourceTree = "<group>";
+		};
+		A0AFAD01EDF4B90B8AB9B690 /* LlamaKit */ = {
+			isa = PBXGroup;
+			children = (
+				A6534BE66E8C70E54A75671C /* Result.swift */,
+				9FCA0562B8D47FDB7098ED72 /* Support Files */,
+			);
+			path = LlamaKit;
+			sourceTree = "<group>";
+		};
+		BE95CDC7C6FFF508523DFAF9 /* extobjc */ = {
+			isa = PBXGroup;
+			children = (
+				3896F29B40CEECC4060EB949 /* EXTKeyPathCoding.h */,
+				6937B1925C0BA5F9A50920F2 /* EXTRuntimeExtensions.h */,
+				9CFBA7889BC1410A70F6A4B8 /* EXTRuntimeExtensions.m */,
+				5A04EDCD7036878F0CC39729 /* EXTScope.h */,
+				A40E7F4520B34A3AE1CCFF0C /* EXTScope.m */,
+				758B8346D3CBCE4037E39B47 /* metamacros.h */,
+			);
+			name = extobjc;
+			sourceTree = "<group>";
+		};
+		C598F0D951C75C357C1B9F9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31ACFD7B9A67FB1F2CAB44BA /* LlamaKit.framework */,
+				74FA66135060F0E9A33FE2EA /* LlamaKit.framework */,
+				F51EDDE416D6386C9D202576 /* Mantle.framework */,
+				FA748C9641C6E1FA6FC8DF4D /* Mantle.framework */,
+				24DC600683D1197BC25B94BB /* Pods_PercolateCoffee.framework */,
+				FAD27E24A616E9502C6DF43F /* Pods_PercolateCoffeeTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4C6AFB1BD9E5B0EED7FD4DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFDF6D33268AAF25F9871B98 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFDF6D33268AAF25F9871B98 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AF1E1DD5D6B9D9AB2A25DC71 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		103BC5F0D324EA0E6B587595 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6573660187AA9DA55DC935DE /* EXTKeyPathCoding.h in Headers */,
+				927F6B612D0EA3C1F2AFDB8A /* EXTRuntimeExtensions.h in Headers */,
+				8121558FFE08353BAE71C6CB /* EXTScope.h in Headers */,
+				92A79C032904D27C0B74A6BC /* MTLJSONAdapter.h in Headers */,
+				B3E91CDE874B9634A4A1BFDE /* MTLModel+NSCoding.h in Headers */,
+				346FFA6D0B53E41D23D45B50 /* MTLModel.h in Headers */,
+				7FC64449ED537995D0382EE8 /* MTLReflection.h in Headers */,
+				1713F2385440A4F7FEFDE050 /* MTLTransformerErrorHandling.h in Headers */,
+				B274F144C96936BD48FB9A0A /* MTLValueTransformer.h in Headers */,
+				2389122A29F255525A5B307D /* Mantle.h in Headers */,
+				E03EDD4667457F763058344A /* NSArray+MTLManipulationAdditions.h in Headers */,
+				AB807C271F72A72F86D3C5CD /* NSDictionary+MTLJSONKeyPath.h in Headers */,
+				EE398E409A24D2A51877539F /* NSDictionary+MTLManipulationAdditions.h in Headers */,
+				BAF4AB3AC136B42AB09684E2 /* NSDictionary+MTLMappingAdditions.h in Headers */,
+				F24D48F8820D9C37A0795495 /* NSError+MTLModelException.h in Headers */,
+				AE038FB10C940DCC7B054D16 /* NSObject+MTLComparisonAdditions.h in Headers */,
+				A2482EBB0780A17E37DD88B5 /* NSValueTransformer+MTLInversionAdditions.h in Headers */,
+				D4495CE6DDE7E28D836E03D0 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h in Headers */,
+				77C328A46242174A43A08AF6 /* Pods-PercolateCoffee-Mantle-umbrella.h in Headers */,
+				82D82951339AA786D4610382 /* metamacros.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88322753C498BF1ABF4ABEAD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C0887D62736E14ABE3E7FD /* Pods-PercolateCoffeeTests-LlamaKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5EB3DF89516D212CF6D7106 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A67C31EF4535B3052C4681C /* Pods-PercolateCoffee-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0F027DC4F46C92276827BC8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C2E2CE8D9FC56AADDAF448E /* Pods-PercolateCoffee-LlamaKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F425F971FE6624BD7F068B26 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				354C534B0841B4AA212B532C /* EXTKeyPathCoding.h in Headers */,
+				6E6E69A92E6D90E03C984C68 /* EXTRuntimeExtensions.h in Headers */,
+				E98CDB03D27ECB0E6A59D27E /* EXTScope.h in Headers */,
+				6904FBBD0526D34DB18EFC11 /* MTLJSONAdapter.h in Headers */,
+				E454EA8E7E8392041BFC6CB4 /* MTLModel+NSCoding.h in Headers */,
+				FC296543BE97AE9F488DD424 /* MTLModel.h in Headers */,
+				EF15BB26EB3116ED4973900D /* MTLReflection.h in Headers */,
+				E1B4D63B8AB73F1A0FEFE109 /* MTLTransformerErrorHandling.h in Headers */,
+				18EBF6E47F6AD87D2EBEC92B /* MTLValueTransformer.h in Headers */,
+				BDA529DE87B42CFBEDB74C48 /* Mantle.h in Headers */,
+				6CE497C7F67572F60A36338A /* NSArray+MTLManipulationAdditions.h in Headers */,
+				121137A9B1372E6E1881B260 /* NSDictionary+MTLJSONKeyPath.h in Headers */,
+				3BCBD5893EB1F1E672E4C0EE /* NSDictionary+MTLManipulationAdditions.h in Headers */,
+				C17C70DAE459622A162D910F /* NSDictionary+MTLMappingAdditions.h in Headers */,
+				83F1C73E812AF78D61629FC2 /* NSError+MTLModelException.h in Headers */,
+				FCF7D3C692A17B30F643027B /* NSObject+MTLComparisonAdditions.h in Headers */,
+				F35E80DEDBE59D3A0BF2FFEB /* NSValueTransformer+MTLInversionAdditions.h in Headers */,
+				8551F5C8F2D67368337DFB70 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h in Headers */,
+				342EAE367110FA0D6F538C41 /* Pods-PercolateCoffeeTests-Mantle-umbrella.h in Headers */,
+				EE5A651522A327D82EB651D1 /* metamacros.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51F4B67F34AF0CB59D9C32E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2918EE572250FE3247078D1A /* Pods-PercolateCoffeeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		29DB98C2BD0CEC1B88B58A19 /* Pods-PercolateCoffee-LlamaKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64672708C36AA1F30E465D17 /* Build configuration list for PBXNativeTarget "Pods-PercolateCoffee-LlamaKit" */;
+			buildPhases = (
+				E3FF8E48BCC596BDEAFEB862 /* Sources */,
+				B4EC238EAB627924D87862BA /* Frameworks */,
+				E0F027DC4F46C92276827BC8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PercolateCoffee-LlamaKit";
+			productName = "Pods-PercolateCoffee-LlamaKit";
+			productReference = 31ACFD7B9A67FB1F2CAB44BA /* LlamaKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B40924F433CB697BAACDC87E /* Pods-PercolateCoffee-Mantle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A318B50841313D7A68A883D /* Build configuration list for PBXNativeTarget "Pods-PercolateCoffee-Mantle" */;
+			buildPhases = (
+				95B01FD373CE7531A2FDBDAE /* Sources */,
+				63DB12FCAEC9D06FEA6E1936 /* Frameworks */,
+				103BC5F0D324EA0E6B587595 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PercolateCoffee-Mantle";
+			productName = "Pods-PercolateCoffee-Mantle";
+			productReference = F51EDDE416D6386C9D202576 /* Mantle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B4BCE7AC33C2F025E66F7D6F /* Pods-PercolateCoffee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94C620C78F8F8887120E839E /* Build configuration list for PBXNativeTarget "Pods-PercolateCoffee" */;
+			buildPhases = (
+				A99F6542D04B7C4DF756BE8A /* Sources */,
+				E0BF4B9F0982C835CCDA1E21 /* Frameworks */,
+				D5EB3DF89516D212CF6D7106 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6A5C7AAFB4B65C878FF3DDC /* PBXTargetDependency */,
+				A4085D49CCC5D35C3D80870D /* PBXTargetDependency */,
+			);
+			name = "Pods-PercolateCoffee";
+			productName = "Pods-PercolateCoffee";
+			productReference = 24DC600683D1197BC25B94BB /* Pods_PercolateCoffee.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C871F63BED1044A10E545D24 /* Pods-PercolateCoffeeTests-LlamaKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF7F5075F82947C2A4F98F3D /* Build configuration list for PBXNativeTarget "Pods-PercolateCoffeeTests-LlamaKit" */;
+			buildPhases = (
+				9AF1669D587E6374FDF8F41D /* Sources */,
+				BAFC1232EBF3DEA5161FC57F /* Frameworks */,
+				88322753C498BF1ABF4ABEAD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PercolateCoffeeTests-LlamaKit";
+			productName = "Pods-PercolateCoffeeTests-LlamaKit";
+			productReference = 74FA66135060F0E9A33FE2EA /* LlamaKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E5BC4ADB0FF342C4D6CF007B /* Pods-PercolateCoffeeTests-Mantle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF4DB6207306FCABEAA3B6C2 /* Build configuration list for PBXNativeTarget "Pods-PercolateCoffeeTests-Mantle" */;
+			buildPhases = (
+				3E7FFFC9034B8D1104FD77D4 /* Sources */,
+				1AAA4656C9D0F86ED70FEAA7 /* Frameworks */,
+				F425F971FE6624BD7F068B26 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PercolateCoffeeTests-Mantle";
+			productName = "Pods-PercolateCoffeeTests-Mantle";
+			productReference = FA748C9641C6E1FA6FC8DF4D /* Mantle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA0684AF241F3481DEBB7DE3 /* Pods-PercolateCoffeeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DEE81C193E3DD51C3C070C2 /* Build configuration list for PBXNativeTarget "Pods-PercolateCoffeeTests" */;
+			buildPhases = (
+				7A6107A7926F7FAE6B4D12D9 /* Sources */,
+				23FA650A0A5B2D5090D5DD44 /* Frameworks */,
+				F51F4B67F34AF0CB59D9C32E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66D8F68F4E259EE6EBAE42A1 /* PBXTargetDependency */,
+				005E162521403CEE9AC740CD /* PBXTargetDependency */,
+			);
+			name = "Pods-PercolateCoffeeTests";
+			productName = "Pods-PercolateCoffeeTests";
+			productReference = FAD27E24A616E9502C6DF43F /* Pods_PercolateCoffeeTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89E19FDBDD0E66503A5840FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = CA48EC02E8D54A531F27BC5D /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 348F8FFE36897FF45E949161;
+			productRefGroup = C598F0D951C75C357C1B9F9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4BCE7AC33C2F025E66F7D6F /* Pods-PercolateCoffee */,
+				29DB98C2BD0CEC1B88B58A19 /* Pods-PercolateCoffee-LlamaKit */,
+				B40924F433CB697BAACDC87E /* Pods-PercolateCoffee-Mantle */,
+				FA0684AF241F3481DEBB7DE3 /* Pods-PercolateCoffeeTests */,
+				C871F63BED1044A10E545D24 /* Pods-PercolateCoffeeTests-LlamaKit */,
+				E5BC4ADB0FF342C4D6CF007B /* Pods-PercolateCoffeeTests-Mantle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E7FFFC9034B8D1104FD77D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A1E9BEB376DD6573A381B72 /* EXTRuntimeExtensions.m in Sources */,
+				BD9156A04212A2166C97EEBA /* EXTScope.m in Sources */,
+				344B3D06E1113934636383D7 /* MTLJSONAdapter.m in Sources */,
+				4955E40A7171F936AC027974 /* MTLModel+NSCoding.m in Sources */,
+				50DE5F9DB6CA83BF26C770E7 /* MTLModel.m in Sources */,
+				AF27323E80B5F3CE58B03340 /* MTLReflection.m in Sources */,
+				2C01D899340B20AC47B8EE01 /* MTLTransformerErrorHandling.m in Sources */,
+				C8B483040DC42AC1A67650C8 /* MTLValueTransformer.m in Sources */,
+				B2C3FCA99C90E4E6963FBDDE /* NSArray+MTLManipulationAdditions.m in Sources */,
+				F740F27E3D2E24D90D22168C /* NSDictionary+MTLJSONKeyPath.m in Sources */,
+				B0A27FC458015E56C1D79756 /* NSDictionary+MTLManipulationAdditions.m in Sources */,
+				DD5A361D9D1F8FC5AB071019 /* NSDictionary+MTLMappingAdditions.m in Sources */,
+				18B5017D01E645241FAAD39D /* NSError+MTLModelException.m in Sources */,
+				30F4B757983B84F6EC727D1E /* NSObject+MTLComparisonAdditions.m in Sources */,
+				9FAB93E0C5A6ACFAD879E2DA /* NSValueTransformer+MTLInversionAdditions.m in Sources */,
+				634BA0370B18FBA305586E6D /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */,
+				C8CF292C52E19561F9A54A43 /* Pods-PercolateCoffeeTests-Mantle-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A6107A7926F7FAE6B4D12D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C74AF8B8CF34D59372136C /* Pods-PercolateCoffeeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95B01FD373CE7531A2FDBDAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96BE277EBACCC471C4DF571 /* EXTRuntimeExtensions.m in Sources */,
+				81E7466004AEC48428CF78E8 /* EXTScope.m in Sources */,
+				B8BC9802354B94B5CDB358AD /* MTLJSONAdapter.m in Sources */,
+				CC3B5CEC9619A96BBDDCE6CC /* MTLModel+NSCoding.m in Sources */,
+				D5E3E98C6B6D2186C39486B2 /* MTLModel.m in Sources */,
+				570F3F5143346B15136E2F02 /* MTLReflection.m in Sources */,
+				5E6B801994F15CBFB6EDEE58 /* MTLTransformerErrorHandling.m in Sources */,
+				4230994D16D7A71E071216F4 /* MTLValueTransformer.m in Sources */,
+				B019AC6F9A3A444E02793D5F /* NSArray+MTLManipulationAdditions.m in Sources */,
+				F6ADC5B89A5B7B9439766348 /* NSDictionary+MTLJSONKeyPath.m in Sources */,
+				FE6E22E0F3C1DD5446EE4C18 /* NSDictionary+MTLManipulationAdditions.m in Sources */,
+				AEFC36450357717EF1944FAD /* NSDictionary+MTLMappingAdditions.m in Sources */,
+				20E9E3FE72967DC53EC5A0C0 /* NSError+MTLModelException.m in Sources */,
+				264433BF08D668F3F82D3DDA /* NSObject+MTLComparisonAdditions.m in Sources */,
+				80A8C9BEF4448E9C5D0F7781 /* NSValueTransformer+MTLInversionAdditions.m in Sources */,
+				9783F8949FBF1445EE155C81 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */,
+				8F4466EFF44DD111F722DA4F /* Pods-PercolateCoffee-Mantle-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AF1669D587E6374FDF8F41D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E33EAD45DBBF2EC07D09C0D0 /* Pods-PercolateCoffeeTests-LlamaKit-dummy.m in Sources */,
+				AD5EA35084D6F476A2D038CF /* Result.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99F6542D04B7C4DF756BE8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				519A24CDE90BEC376BEA9DDD /* Pods-PercolateCoffee-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3FF8E48BCC596BDEAFEB862 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CB8F464A40234AC1C66005A /* Pods-PercolateCoffee-LlamaKit-dummy.m in Sources */,
+				F1F22F378F3A636531D03FBC /* Result.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		005E162521403CEE9AC740CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PercolateCoffeeTests-Mantle";
+			target = E5BC4ADB0FF342C4D6CF007B /* Pods-PercolateCoffeeTests-Mantle */;
+			targetProxy = 080C297C29685B2388A4100D /* PBXContainerItemProxy */;
+		};
+		66D8F68F4E259EE6EBAE42A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PercolateCoffeeTests-LlamaKit";
+			target = C871F63BED1044A10E545D24 /* Pods-PercolateCoffeeTests-LlamaKit */;
+			targetProxy = 33D36767FF9B018B89CF14BF /* PBXContainerItemProxy */;
+		};
+		A4085D49CCC5D35C3D80870D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PercolateCoffee-Mantle";
+			target = B40924F433CB697BAACDC87E /* Pods-PercolateCoffee-Mantle */;
+			targetProxy = BE24D9D997F551ACF8332A9B /* PBXContainerItemProxy */;
+		};
+		E6A5C7AAFB4B65C878FF3DDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PercolateCoffee-LlamaKit";
+			target = 29DB98C2BD0CEC1B88B58A19 /* Pods-PercolateCoffee-LlamaKit */;
+			targetProxy = A4E76F67BB58CEE0DAF0B6C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		041D09CD94F5EB00318C24E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A5A58F26DBAD73A6FDC8FB8 /* Pods-PercolateCoffeeTests-Mantle-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PercolateCoffeeTests-Mantle/Pods-PercolateCoffeeTests-Mantle-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PercolateCoffeeTests-Mantle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PercolateCoffeeTests-Mantle/Pods-PercolateCoffeeTests-Mantle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Mantle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1B785CF717800C5DD02920D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAD27809CE13CF020A6345F5 /* Pods-PercolateCoffeeTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PercolateCoffeeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PercolateCoffeeTests/Pods-PercolateCoffeeTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_PercolateCoffeeTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2D2FECAFF1F9EA8C40B8E935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C80EC3BEF2F2198FF9ADE9B4 /* Pods-PercolateCoffee-LlamaKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PercolateCoffee-LlamaKit/Pods-PercolateCoffee-LlamaKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PercolateCoffee-LlamaKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PercolateCoffee-LlamaKit/Pods-PercolateCoffee-LlamaKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LlamaKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		43C98C644BB3B9B232B3F14B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4EA3AC3EB9823A62CDEFF50D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACB6831B7C965791E1297E23 /* Pods-PercolateCoffeeTests-LlamaKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PercolateCoffeeTests-LlamaKit/Pods-PercolateCoffeeTests-LlamaKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PercolateCoffeeTests-LlamaKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PercolateCoffeeTests-LlamaKit/Pods-PercolateCoffeeTests-LlamaKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LlamaKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		54F21111B491D0215B25D684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFDD75F4B89C050A33822302 /* Pods-PercolateCoffeeTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PercolateCoffeeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PercolateCoffeeTests/Pods-PercolateCoffeeTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_PercolateCoffeeTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5581589D11D6E3F979B832B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ECDF89583EC4C28E2B719F2 /* Pods-PercolateCoffee-Mantle-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PercolateCoffee-Mantle/Pods-PercolateCoffee-Mantle-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PercolateCoffee-Mantle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PercolateCoffee-Mantle/Pods-PercolateCoffee-Mantle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Mantle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		62CFB5A180153B11E3702E36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		748BE5DC832D7E0D45DF88F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7298AB7E05819B7227913A6 /* Pods-PercolateCoffee.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PercolateCoffee/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PercolateCoffee/Pods-PercolateCoffee.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_PercolateCoffee;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8722536A34DB6E29BFBD2D12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E3112B81085D2E6698FB71E /* Pods-PercolateCoffee.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PercolateCoffee/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PercolateCoffee/Pods-PercolateCoffee.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_PercolateCoffee;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE66AB9F9EE8C5ED8C380B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACB6831B7C965791E1297E23 /* Pods-PercolateCoffeeTests-LlamaKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PercolateCoffeeTests-LlamaKit/Pods-PercolateCoffeeTests-LlamaKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PercolateCoffeeTests-LlamaKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PercolateCoffeeTests-LlamaKit/Pods-PercolateCoffeeTests-LlamaKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LlamaKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA3AB0BB663DFD5B9FF84CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C80EC3BEF2F2198FF9ADE9B4 /* Pods-PercolateCoffee-LlamaKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PercolateCoffee-LlamaKit/Pods-PercolateCoffee-LlamaKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PercolateCoffee-LlamaKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PercolateCoffee-LlamaKit/Pods-PercolateCoffee-LlamaKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LlamaKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E21AC9D0356942BCE9E7E974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A5A58F26DBAD73A6FDC8FB8 /* Pods-PercolateCoffeeTests-Mantle-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PercolateCoffeeTests-Mantle/Pods-PercolateCoffeeTests-Mantle-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PercolateCoffeeTests-Mantle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PercolateCoffeeTests-Mantle/Pods-PercolateCoffeeTests-Mantle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Mantle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F89EB5B4C5C99AA114755E97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ECDF89583EC4C28E2B719F2 /* Pods-PercolateCoffee-Mantle-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PercolateCoffee-Mantle/Pods-PercolateCoffee-Mantle-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PercolateCoffee-Mantle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PercolateCoffee-Mantle/Pods-PercolateCoffee-Mantle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Mantle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DEE81C193E3DD51C3C070C2 /* Build configuration list for PBXNativeTarget "Pods-PercolateCoffeeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F21111B491D0215B25D684 /* Debug */,
+				1B785CF717800C5DD02920D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64672708C36AA1F30E465D17 /* Build configuration list for PBXNativeTarget "Pods-PercolateCoffee-LlamaKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D2FECAFF1F9EA8C40B8E935 /* Debug */,
+				CA3AB0BB663DFD5B9FF84CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A318B50841313D7A68A883D /* Build configuration list for PBXNativeTarget "Pods-PercolateCoffee-Mantle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F89EB5B4C5C99AA114755E97 /* Debug */,
+				5581589D11D6E3F979B832B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94C620C78F8F8887120E839E /* Build configuration list for PBXNativeTarget "Pods-PercolateCoffee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				748BE5DC832D7E0D45DF88F8 /* Debug */,
+				8722536A34DB6E29BFBD2D12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA48EC02E8D54A531F27BC5D /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CFB5A180153B11E3702E36 /* Debug */,
+				43C98C644BB3B9B232B3F14B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF4DB6207306FCABEAA3B6C2 /* Build configuration list for PBXNativeTarget "Pods-PercolateCoffeeTests-Mantle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041D09CD94F5EB00318C24E2 /* Debug */,
+				E21AC9D0356942BCE9E7E974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF7F5075F82947C2A4F98F3D /* Build configuration list for PBXNativeTarget "Pods-PercolateCoffeeTests-LlamaKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EA3AC3EB9823A62CDEFF50D /* Debug */,
+				AE66AB9F9EE8C5ED8C380B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89E19FDBDD0E66503A5840FD /* Project object */;
+}
