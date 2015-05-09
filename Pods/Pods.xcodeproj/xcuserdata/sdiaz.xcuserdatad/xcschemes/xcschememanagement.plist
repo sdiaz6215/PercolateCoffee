@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-PercolateCoffee-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-PercolateCoffee-LlamaKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -15,6 +20,11 @@
 			<false/>
 		</dict>
 		<key>Pods-PercolateCoffee.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-PercolateCoffeeTests-AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,32 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>29DB98C2BD0CEC1B88B58A19</key>
+		<key>03C820993F78B4CFF5FD095B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B40924F433CB697BAACDC87E</key>
+		<key>512BCA8F58A48FB29D882290</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B4BCE7AC33C2F025E66F7D6F</key>
+		<key>59D82A2ADD051B15FBCEE7D0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C871F63BED1044A10E545D24</key>
+		<key>61E83A7C9598475FD30B3DFA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E5BC4ADB0FF342C4D6CF007B</key>
+		<key>C2905CBF901B7BA36E1DDFD9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FA0684AF241F3481DEBB7DE3</key>
+		<key>C52914224CD7F3396FB5EC4A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E52A3B2481E8B427B36A25BD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB353785CBB356036A1AC90A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "29DB98C2BD0CEC1B88B58A19"
+               BlueprintIdentifier = "EB353785CBB356036A1AC90A"
                BuildableName = "LlamaKit.framework"
                BlueprintName = "Pods-PercolateCoffee-LlamaKit"
                ReferencedContainer = "container:Pods.xcodeproj">
