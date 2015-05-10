@@ -7,9 +7,9 @@
 //
 
 #import "CoffeeTableViewController.h"
-
 #import "Constants.h"
 #import "CoffeeDetailViewController.h"
+#import "CoffeeDataManager.h"
 
 @interface CoffeeTableViewController ()
 
@@ -19,7 +19,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self styleNavigationBar];
+    [self setupPullToRefresh];
+    [self pullCoffeeData];
+}
+
+- (void)styleNavigationBar
+{
     // Nav Bar Coffee Drop Image
     UIImageView *coffeeDropImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
     [coffeeDropImageView setContentMode:UIViewContentModeScaleAspectFit];
@@ -30,6 +36,28 @@
     self.title = @"";
 }
 
+- (void)setupPullToRefresh
+{
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    self.refreshControl.tintColor = kStylingCoffeeOrange;
+    [self.refreshControl addTarget:self action:@selector(pullCoffeeData) forControlEvents:UIControlEventValueChanged];
+}
+
+- (void)pullCoffeeData
+{
+    [[CoffeeDataManager sharedManager] getAllCoffeeSuccess:^(){
+        [self refreshUI];
+    }failure:^(NSError *error){
+        [[[UIAlertView alloc] initWithTitle:@"Oops" message:[NSString stringWithFormat:@"Our coffee machine seems to be down. Check your connection and try again.\n\nAdditional Details: %@", error.localizedDescription] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+    }];
+}
+
+- (void)refreshUI
+{
+    [self.refreshControl endRefreshing];
+    [self.tableView reloadData];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -37,20 +65,19 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 1;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [[[CoffeeDataManager sharedManager] allCoffee] count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CoffeeCell" forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifierCoffeeTable forIndexPath:indexPath];
     
     // Configure the cell...
     [cell.textLabel setText:@"This is a test."];
@@ -68,47 +95,47 @@
 }
 
 /*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+ // Override to support conditional editing of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+ // Return NO if you do not want the specified item to be editable.
+ return YES;
+ }
+ */
 
 /*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
+ // Override to support editing the table view.
+ - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+ if (editingStyle == UITableViewCellEditingStyleDelete) {
+ // Delete the row from the data source
+ [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+ } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+ // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+ }
+ }
+ */
 
 /*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
+ // Override to support rearranging the table view.
+ - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+ }
+ */
 
 /*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
+ // Override to support conditional rearranging of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+ // Return NO if you do not want the item to be re-orderable.
+ return YES;
+ }
+ */
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

@@ -15,6 +15,8 @@
 		C37B89E01AFBB7BA00C45B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37B89DE1AFBB7BA00C45B27 /* Main.storyboard */; };
 		C37B89E21AFBB7BA00C45B27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C37B89E11AFBB7BA00C45B27 /* Images.xcassets */; };
 		C37B89F11AFBB7BA00C45B27 /* PercolateCoffeeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C37B89F01AFBB7BA00C45B27 /* PercolateCoffeeTests.m */; };
+		C3A430B61AFEBE37000DA0E4 /* Coffee.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A430B51AFEBE37000DA0E4 /* Coffee.m */; };
+		C3A430B91AFEDB5D000DA0E4 /* CoffeeDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A430B81AFEDB5D000DA0E4 /* CoffeeDataManager.m */; };
 		F755BCB9A0554F5F60E6897A /* Pods_PercolateCoffee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04180014B47BD648F9DFC7DC /* Pods_PercolateCoffee.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,11 @@
 		C37B89EA1AFBB7BA00C45B27 /* PercolateCoffeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PercolateCoffeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37B89EF1AFBB7BA00C45B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C37B89F01AFBB7BA00C45B27 /* PercolateCoffeeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PercolateCoffeeTests.m; sourceTree = "<group>"; };
+		C3A430B41AFEBE37000DA0E4 /* Coffee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Coffee.h; path = Models/Coffee.h; sourceTree = "<group>"; };
+		C3A430B51AFEBE37000DA0E4 /* Coffee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Coffee.m; path = Models/Coffee.m; sourceTree = "<group>"; };
+		C3A430B71AFEDB5D000DA0E4 /* CoffeeDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoffeeDataManager.h; path = Managers/CoffeeDataManager.h; sourceTree = "<group>"; };
+		C3A430B81AFEDB5D000DA0E4 /* CoffeeDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoffeeDataManager.m; path = Managers/CoffeeDataManager.m; sourceTree = "<group>"; };
+		C3A430BB1AFEE96A000DA0E4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DA4180F2FFC4C77D2E11B280 /* Pods-PercolateCoffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PercolateCoffee.release.xcconfig"; path = "Pods/Target Support Files/Pods-PercolateCoffee/Pods-PercolateCoffee.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +82,7 @@
 		A17122B1C2A645998A3A1235 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C3A430BB1AFEE96A000DA0E4 /* SystemConfiguration.framework */,
 				04180014B47BD648F9DFC7DC /* Pods_PercolateCoffee.framework */,
 				3652A277A26638D7E750C2A5 /* Pods_PercolateCoffeeTests.framework */,
 			);
@@ -115,6 +123,8 @@
 		C37B89D31AFBB7BA00C45B27 /* PercolateCoffee */ = {
 			isa = PBXGroup;
 			children = (
+				C3A430BA1AFEDB61000DA0E4 /* Managers */,
+				C3A430B31AFEBDED000DA0E4 /* Models */,
 				C31799511AFBEADF0055DED0 /* ViewControllers */,
 				C31799551AFBF2E50055DED0 /* Constants.h */,
 				C37B89D81AFBB7BA00C45B27 /* AppDelegate.h */,
@@ -150,6 +160,24 @@
 				C37B89EF1AFBB7BA00C45B27 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3A430B31AFEBDED000DA0E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3A430B41AFEBE37000DA0E4 /* Coffee.h */,
+				C3A430B51AFEBE37000DA0E4 /* Coffee.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C3A430BA1AFEDB61000DA0E4 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C3A430B71AFEDB5D000DA0E4 /* CoffeeDataManager.h */,
+				C3A430B81AFEDB5D000DA0E4 /* CoffeeDataManager.m */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		D3D2CF241AB5167186ADF2B4 /* Pods */ = {
@@ -361,8 +389,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A430B61AFEBE37000DA0E4 /* Coffee.m in Sources */,
 				C37B89DA1AFBB7BA00C45B27 /* AppDelegate.m in Sources */,
 				C31799541AFBF1E90055DED0 /* CoffeeDetailViewController.m in Sources */,
+				C3A430B91AFEDB5D000DA0E4 /* CoffeeDataManager.m in Sources */,
 				C31799501AFBEAD90055DED0 /* CoffeeTableViewController.m in Sources */,
 				C37B89D71AFBB7BA00C45B27 /* main.m in Sources */,
 			);
