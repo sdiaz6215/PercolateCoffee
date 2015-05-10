@@ -15,8 +15,10 @@
 @property (nonatomic, copy, readonly) NSString *name;
 @property (nonatomic, copy, readonly) NSString *coffeeDescription;
 @property (nonatomic, copy, readonly) NSString *imageUrl;
-@property (nonatomic, copy, readonly) NSData *imageData;
+@property (nonatomic, copy) NSData *imageData;
+@property (nonatomic, copy, readonly) NSDate *lastUpdatedDate;
 
 - (BOOL)isValidCoffee;
++(NSString *)dateDiff:(NSDate *)origDate;
 
 @end

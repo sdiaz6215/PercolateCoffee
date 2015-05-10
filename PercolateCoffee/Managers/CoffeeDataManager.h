@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 /**
  `CoffeeDataManager` handles API requests to retrieve coffee and archiving/unarchiving
@@ -26,6 +27,11 @@
  */
 - (void)getAllCoffeeSuccess:(void (^)())success
                    failure:(void (^)(NSError *error))failure;
+
+/**
+ Creates an RACSignal and downloads image data for supplied url
+ */
+- (RACSignal*)downloadImageData:(NSString*)imageUrl;
 
 /**
  Saves current coffee data using NSKeyedArchiver

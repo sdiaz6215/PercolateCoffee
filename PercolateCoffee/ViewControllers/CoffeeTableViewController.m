@@ -76,6 +76,45 @@
     return [[[CoffeeDataManager sharedManager] allCoffee] count];
 }
 
+//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    static CoffeeTableViewCell *sizingCell = nil;
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        sizingCell = [self.tableView dequeueReusableCellWithIdentifier:kCellIdentifierCoffeeTable];
+//    });
+//    
+//    Coffee *currentCoffeeModel = [[[CoffeeDataManager sharedManager] allCoffee] objectAtIndex:indexPath.row];
+//    [sizingCell setCoffeeModel:currentCoffeeModel];
+//    
+//    [sizingCell setNeedsLayout];
+//    [sizingCell layoutIfNeeded];
+//    
+//    CGSize size = [sizingCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+//    return size.height + 1.0f;
+//}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static CoffeeTableViewCell *sizingCell = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sizingCell = [self.tableView dequeueReusableCellWithIdentifier:kCellIdentifierCoffeeTable];
+    });
+    
+    Coffee *currentCoffeeModel = [[[CoffeeDataManager sharedManager] allCoffee] objectAtIndex:indexPath.row];
+    [sizingCell setCoffeeModel:currentCoffeeModel];
+    [sizingCell layoutIfNeeded];
+    
+    CGSize size = [sizingCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    return size.height+1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewAutomaticDimension;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CoffeeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifierCoffeeTable forIndexPath:indexPath];

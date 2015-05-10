@@ -56,19 +56,6 @@
         reachabilityStatus = status;
         
         NSLog(@"Reachability changed: %@", AFStringFromNetworkReachabilityStatus(status));
-        
-//        switch (status) {
-//            case AFNetworkReachabilityStatusReachableViaWWAN:
-//            case AFNetworkReachabilityStatusReachableViaWiFi:
-//                // -- Reachable -- //
-//                NSLog(@"Reachable");
-//                break;
-//            case AFNetworkReachabilityStatusNotReachable:
-//            default:
-//                // -- Not reachable -- //
-//                NSLog(@"Not Reachable");
-//                break;
-//        }
     }];
 }
 
@@ -84,7 +71,7 @@
     if([self isNetworkReachable] || reachabilityStatus == AFNetworkReachabilityStatusUnknown)
     {
         NSLog(@"Network Reachable, retrieving all coffee...");
-    
+        
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
         [manager.requestSerializer setValue:kCoffeeAPIKey forHTTPHeaderField:@"Authorization"];
         [manager GET:kCoffeeAPIGetAll parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject){
@@ -98,23 +85,61 @@
                 if([newCoffee isValidCoffee])
                     [coffeeArray addObject:newCoffee];
             }
-            allCoffee = coffeeArray;
+            allCoffee = @[coffeeArray[0]];
             [self archiveData];
             success();
         } failure:^(AFHTTPRequestOperation *operation, NSError *error){
-            failure(error);
+            // If we fail due to either not truly knowing the reachability status fast enough or endpoint issues,
+            // lets see if we have any archived data as a fallback and send success. Ideally the user of this manager
+            // shouldn't have to worry about states and cached/live data management.
+            
+            if([self unarchiveData])
+                success();
+            else
+                failure(error);
         }];
     }
     else
     {
         NSLog(@"Network unreachable, falling back to archived coffee.");
         
-        // If network is not reachable AND we have not unarchived yet, unarchive
-        if(!allCoffee)
-            [self unarchiveData];
-        
-        success();
+        // If network is not reachable AND we have not unarchived yet, try to unarchive as a fallback
+        if([self unarchiveData])
+            success();
+        else
+            failure(nil);
     }
+}
+
+- (RACSignal*)downloadImageData:(NSString*)imageUrl
+{
+    return [RACSignal startLazilyWithScheduler:[RACScheduler schedulerWithPriority:RACSchedulerPriorityBackground] block:^(id subscriber){
+        if(imageUrl)
+        {
+            NSURL *url = [NSURL URLWithString:imageUrl];
+            if(url)
+            {
+                NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:imageUrl]];
+                [NSURLConnection sendAsynchronousRequest:request
+                                                   queue:[NSOperationQueue mainQueue]
+                                       completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+                                           if ( !error )
+                                           {
+                                               NSLog(@"Image data successfully downloaded for URL: %@", imageUrl);
+                                               [subscriber sendNext:data];
+                                               [subscriber sendCompleted];
+                                               [self archiveData];
+                                           }
+                                           else
+                                               [subscriber sendError:error];
+                                       }];
+            }
+            else
+                [subscriber sendError:nil];
+        }
+        else
+            [subscriber sendError:nil];
+    }];
 }
 
 - (void)archiveData
@@ -128,18 +153,25 @@
         NSLog(@"Archiving Coffee Failed! We spilled it. =(");
 }
 
-- (void)unarchiveData
+- (BOOL)unarchiveData
 {
     NSString *filePath = [self archivalDocumentsPath];
     if([[NSFileManager defaultManager] fileExistsAtPath:filePath])
+    {
         allCoffee = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
+        
+        if(!allCoffee)
+            NSLog(@"Error Unarchiving Coffee!");
+        else
+            NSLog(@"Coffee Unarchiving Successful!");
+    }
     else
         NSLog(@"No Archived Coffee Found.");
     
     if(!allCoffee)
-        NSLog(@"Error Unarchiving Coffee!");
+        return NO;
     else
-        NSLog(@"Coffee Unarchiving Successful!");
+        return YES;
 }
 
 @end

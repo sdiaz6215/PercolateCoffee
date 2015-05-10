@@ -15,6 +15,7 @@
 @property (nonatomic, retain) IBOutlet UILabel *nameLabel;
 @property (nonatomic, retain) IBOutlet UILabel *descriptionLabel;
 @property (nonatomic, retain) IBOutlet UIImageView *coffeeImageView;
+@property (nonatomic, retain) IBOutlet UILabel *relativeUpdateTimeLabel;
 
 - (void)setCoffeeModel:(Coffee *)_coffeeModel;
 

@@ -7,6 +7,7 @@
 //
 
 #import "CoffeeDetailViewController.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface CoffeeDetailViewController ()
 
@@ -14,7 +15,7 @@
 
 @implementation CoffeeDetailViewController
 
-@synthesize nameLabel, descriptionLabel, coffeeImageView, coffeeModel;
+@synthesize nameLabel, descriptionLabel, coffeeImageView, coffeeModel, relativeUpdateTimeLabel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,9 +28,21 @@
 {
     if(coffeeModel)
     {
-        nameLabel.text = coffeeModel.name;
-        descriptionLabel.text = coffeeModel.coffeeDescription;
-        [coffeeImageView setImage:[UIImage imageWithData:coffeeModel.imageData]];
+        [RACObserve(self, coffeeModel.name) subscribeNext:^(NSString *newName){
+            [nameLabel setText:newName];
+        }];
+        
+        [RACObserve(self, coffeeModel.coffeeDescription) subscribeNext:^(NSString *newDescription){
+            [descriptionLabel setText:newDescription];
+        }];
+        
+        [RACObserve(self, coffeeModel.lastUpdatedDate) subscribeNext:^(NSDate *newDate){
+            [relativeUpdateTimeLabel setText:[NSString stringWithFormat:@"Updated %@", [Coffee dateDiff:newDate]]];
+        }];
+        
+        [RACObserve(self, coffeeModel.imageData) subscribeNext:^(NSData *newImageData){
+            [coffeeImageView setImage:[UIImage imageWithData:newImageData]];
+        }];
     }
 }
 

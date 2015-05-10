@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E52A3B2481E8B427B36A25BD"
+               BlueprintIdentifier = "B719E464033C9A1240BEFEDE"
                BuildableName = "Pods_PercolateCoffee.framework"
                BlueprintName = "Pods-PercolateCoffee"
                ReferencedContainer = "container:Pods.xcodeproj">

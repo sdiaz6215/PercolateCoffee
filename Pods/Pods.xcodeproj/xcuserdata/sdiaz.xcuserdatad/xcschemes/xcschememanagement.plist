@@ -9,12 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-PercolateCoffee-LlamaKit.xcscheme</key>
+		<key>Pods-PercolateCoffee-Mantle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-PercolateCoffee-Mantle.xcscheme</key>
+		<key>Pods-PercolateCoffee-ReactiveCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -29,12 +29,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-PercolateCoffeeTests-LlamaKit.xcscheme</key>
+		<key>Pods-PercolateCoffeeTests-Mantle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-PercolateCoffeeTests-Mantle.xcscheme</key>
+		<key>Pods-PercolateCoffeeTests-ReactiveCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,42 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>03C820993F78B4CFF5FD095B</key>
+		<key>0C1030B2A72C21DAD969BA0F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>512BCA8F58A48FB29D882290</key>
+		<key>74BF3C2E084FCD721F3C28FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>59D82A2ADD051B15FBCEE7D0</key>
+		<key>812E560DF01154FEF5653188</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>61E83A7C9598475FD30B3DFA</key>
+		<key>9BB2E6B7815766A8E9120861</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C2905CBF901B7BA36E1DDFD9</key>
+		<key>A763199EFE117F6AF6DDB230</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C52914224CD7F3396FB5EC4A</key>
+		<key>B719E464033C9A1240BEFEDE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E52A3B2481E8B427B36A25BD</key>
+		<key>E2C6AD37CC54C1D8030320BA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EB353785CBB356036A1AC90A</key>
+		<key>F60C5BECF5B39799E37B885E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
