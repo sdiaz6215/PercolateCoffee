@@ -23,6 +23,8 @@
     [self styleNavigationBar];
     [self setupPullToRefresh];
     [self pullCoffeeData];
+    
+    [self.tableView registerClass:[CoffeeTableViewCell class] forCellReuseIdentifier:kCellIdentifierCoffeeTable];
 }
 
 - (void)styleNavigationBar
@@ -40,7 +42,7 @@
 - (void)setupPullToRefresh
 {
     self.refreshControl = [[UIRefreshControl alloc] init];
-    self.refreshControl.tintColor = kStylingCoffeeOrange;
+    [self.refreshControl setTintColor:kStylingOrange];
     [self.refreshControl addTarget:self action:@selector(pullCoffeeData) forControlEvents:UIControlEventValueChanged];
 }
 

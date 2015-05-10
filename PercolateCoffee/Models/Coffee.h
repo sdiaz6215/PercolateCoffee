@@ -19,6 +19,7 @@
 @property (nonatomic, copy, readonly) NSDate *lastUpdatedDate;
 
 - (BOOL)isValidCoffee;
+- (BOOL)isURLValid;
 +(NSString *)dateDiff:(NSDate *)origDate;
 
 @end

@@ -85,7 +85,7 @@
                 if([newCoffee isValidCoffee])
                     [coffeeArray addObject:newCoffee];
             }
-            allCoffee = @[coffeeArray[0]];
+            allCoffee = coffeeArray;
             [self archiveData];
             success();
         } failure:^(AFHTTPRequestOperation *operation, NSError *error){
@@ -114,7 +114,7 @@
 - (RACSignal*)downloadImageData:(NSString*)imageUrl
 {
     return [RACSignal startLazilyWithScheduler:[RACScheduler schedulerWithPriority:RACSchedulerPriorityBackground] block:^(id subscriber){
-        if(imageUrl)
+        if(imageUrl && ![imageUrl isEqualToString:@""])
         {
             NSURL *url = [NSURL URLWithString:imageUrl];
             if(url)

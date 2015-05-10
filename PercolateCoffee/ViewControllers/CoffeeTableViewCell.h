@@ -12,9 +12,9 @@
 @interface CoffeeTableViewCell : UITableViewCell
 
 @property (nonatomic, retain, readonly) Coffee *coffeeModel;
-@property (nonatomic, retain) IBOutlet UILabel *nameLabel;
-@property (nonatomic, retain) IBOutlet UILabel *descriptionLabel;
-@property (nonatomic, retain) IBOutlet UIImageView *coffeeImageView;
+@property (nonatomic, retain) UILabel *nameLabel;
+@property (nonatomic, retain) UILabel *descriptionLabel;
+@property (nonatomic, retain) UIImageView *coffeeImageView;
 
 - (void)setCoffeeModel:(Coffee *)_coffeeModel;
 

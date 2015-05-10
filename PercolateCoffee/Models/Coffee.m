@@ -63,4 +63,16 @@
     return YES;
 }
 
+- (BOOL)isURLValid
+{
+    if(imageUrl && ![imageUrl isEqualToString:@""])
+    {
+        NSURL *url = [NSURL URLWithString:imageUrl];
+        if(url)
+            return YES;
+    }
+    
+    return NO;
+}
+
 @end
