@@ -1,15 +1,15 @@
 //
-//  CoffeeDetailViewController.h
+//  CoffeeTableViewCell.h
 //  Coffee
 //
-//  Created by Steven Diaz on 5/7/15.
+//  Created by Steven Diaz on 5/9/15.
 //  Copyright (c) 2015 Steven Diaz. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "Coffee.h"
 
-@interface CoffeeDetailViewController : UIViewController
+@interface CoffeeTableViewCell : UITableViewCell
 
 @property (nonatomic, retain, readonly) Coffee *coffeeModel;
 @property (nonatomic, retain) IBOutlet UILabel *nameLabel;

@@ -10,6 +10,7 @@
 #import "Constants.h"
 #import "CoffeeDetailViewController.h"
 #import "CoffeeDataManager.h"
+#import "CoffeeTableViewCell.h"
 
 @interface CoffeeTableViewController ()
 
@@ -77,10 +78,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifierCoffeeTable forIndexPath:indexPath];
+    CoffeeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifierCoffeeTable forIndexPath:indexPath];
     
-    // Configure the cell...
-    [cell.textLabel setText:@"This is a test."];
+    Coffee *currentCoffeeModel = [[[CoffeeDataManager sharedManager] allCoffee] objectAtIndex:indexPath.row];
+    [cell setCoffeeModel:currentCoffeeModel];
     
     return cell;
 }
@@ -89,8 +90,10 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    Coffee *currentCoffeeModel = [[[CoffeeDataManager sharedManager] allCoffee] objectAtIndex:indexPath.row];
     CoffeeDetailViewController *coffeeDetailVC = [[UIStoryboard storyboardWithName:kMainStoryboardName bundle:nil]
                                                   instantiateViewControllerWithIdentifier:kControllerIdentifierCoffeeDetail];
+    [coffeeDetailVC setCoffeeModel:currentCoffeeModel];
     [self.navigationController pushViewController:coffeeDetailVC animated:YES];
 }
 

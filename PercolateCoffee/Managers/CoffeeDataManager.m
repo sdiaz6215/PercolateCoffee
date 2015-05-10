@@ -94,7 +94,9 @@
             {
                 NSError *error;
                 Coffee *newCoffee = [MTLJSONAdapter modelOfClass:[Coffee class] fromJSONDictionary:dict error:&error];
-                [coffeeArray addObject:newCoffee];
+                
+                if([newCoffee isValidCoffee])
+                    [coffeeArray addObject:newCoffee];
             }
             allCoffee = coffeeArray;
             [self archiveData];

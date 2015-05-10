@@ -17,4 +17,6 @@
 @property (nonatomic, copy, readonly) NSString *imageUrl;
 @property (nonatomic, copy, readonly) NSData *imageData;
 
+- (BOOL)isValidCoffee;
+
 @end

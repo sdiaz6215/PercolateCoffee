@@ -17,6 +17,7 @@
 		C37B89F11AFBB7BA00C45B27 /* PercolateCoffeeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C37B89F01AFBB7BA00C45B27 /* PercolateCoffeeTests.m */; };
 		C3A430B61AFEBE37000DA0E4 /* Coffee.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A430B51AFEBE37000DA0E4 /* Coffee.m */; };
 		C3A430B91AFEDB5D000DA0E4 /* CoffeeDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A430B81AFEDB5D000DA0E4 /* CoffeeDataManager.m */; };
+		C3A430BF1AFEF1EA000DA0E4 /* CoffeeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A430BE1AFEF1EA000DA0E4 /* CoffeeTableViewCell.m */; };
 		F755BCB9A0554F5F60E6897A /* Pods_PercolateCoffee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04180014B47BD648F9DFC7DC /* Pods_PercolateCoffee.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		C3A430B71AFEDB5D000DA0E4 /* CoffeeDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoffeeDataManager.h; path = Managers/CoffeeDataManager.h; sourceTree = "<group>"; };
 		C3A430B81AFEDB5D000DA0E4 /* CoffeeDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoffeeDataManager.m; path = Managers/CoffeeDataManager.m; sourceTree = "<group>"; };
 		C3A430BB1AFEE96A000DA0E4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C3A430BD1AFEF1EA000DA0E4 /* CoffeeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoffeeTableViewCell.h; path = ViewControllers/CoffeeTableViewCell.h; sourceTree = "<group>"; };
+		C3A430BE1AFEF1EA000DA0E4 /* CoffeeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoffeeTableViewCell.m; path = ViewControllers/CoffeeTableViewCell.m; sourceTree = "<group>"; };
 		DA4180F2FFC4C77D2E11B280 /* Pods-PercolateCoffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PercolateCoffee.release.xcconfig"; path = "Pods/Target Support Files/Pods-PercolateCoffee/Pods-PercolateCoffee.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +97,8 @@
 			children = (
 				C317994E1AFBEAD90055DED0 /* CoffeeTableViewController.h */,
 				C317994F1AFBEAD90055DED0 /* CoffeeTableViewController.m */,
+				C3A430BD1AFEF1EA000DA0E4 /* CoffeeTableViewCell.h */,
+				C3A430BE1AFEF1EA000DA0E4 /* CoffeeTableViewCell.m */,
 				C31799521AFBF1E90055DED0 /* CoffeeDetailViewController.h */,
 				C31799531AFBF1E90055DED0 /* CoffeeDetailViewController.m */,
 			);
@@ -391,6 +396,7 @@
 			files = (
 				C3A430B61AFEBE37000DA0E4 /* Coffee.m in Sources */,
 				C37B89DA1AFBB7BA00C45B27 /* AppDelegate.m in Sources */,
+				C3A430BF1AFEF1EA000DA0E4 /* CoffeeTableViewCell.m in Sources */,
 				C31799541AFBF1E90055DED0 /* CoffeeDetailViewController.m in Sources */,
 				C3A430B91AFEDB5D000DA0E4 /* CoffeeDataManager.m in Sources */,
 				C31799501AFBEAD90055DED0 /* CoffeeTableViewController.m in Sources */,

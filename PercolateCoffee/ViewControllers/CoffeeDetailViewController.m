@@ -14,10 +14,27 @@
 
 @implementation CoffeeDetailViewController
 
+@synthesize nameLabel, descriptionLabel, coffeeImageView, coffeeModel;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self styleNavigationBar];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    if(coffeeModel)
+    {
+        nameLabel.text = coffeeModel.name;
+        descriptionLabel.text = coffeeModel.coffeeDescription;
+        [coffeeImageView setImage:[UIImage imageWithData:coffeeModel.imageData]];
+    }
+}
+
+- (void)styleNavigationBar
+{
     // Nav Bar Coffee Drop Image
     UIImageView *coffeeDropImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
     [coffeeDropImageView setContentMode:UIViewContentModeScaleAspectFit];
@@ -34,11 +51,6 @@
     self.navigationController.navigationBar.backIndicatorTransitionMaskImage = [UIImage imageNamed:@"BackArrow"];
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
-    
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -47,6 +59,11 @@
 -(void)shareButtonPressed:(id)sender
 {
     
+}
+
+- (void)setCoffeeModel:(Coffee *)_coffeeModel
+{
+    coffeeModel = _coffeeModel;
 }
 
 /*

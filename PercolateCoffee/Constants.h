@@ -16,7 +16,7 @@
 // Storyboard
 #define kMainStoryboardName @"Main"
 #define kControllerIdentifierCoffeeDetail @"CoffeeDetail"
-#define kCellIdentifierCoffeeTable @"CoffeeCell"
+#define kCellIdentifierCoffeeTable @"CoffeeTableViewCell"
 
 // Archiving
 #define kArchivalPathComponent @"coffeeModels"
