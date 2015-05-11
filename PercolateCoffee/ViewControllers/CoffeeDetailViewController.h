@@ -12,11 +12,15 @@
 @interface CoffeeDetailViewController : UIViewController
 
 @property (nonatomic, retain, readonly) Coffee *coffeeModel;
-@property (nonatomic, retain) IBOutlet UILabel *nameLabel;
-@property (nonatomic, retain) IBOutlet UILabel *descriptionLabel;
-@property (nonatomic, retain) IBOutlet UIImageView *coffeeImageView;
-@property (nonatomic, retain) IBOutlet UILabel *relativeUpdateTimeLabel;
+@property (nonatomic, retain) UILabel *nameLabel;
+@property (nonatomic, retain) UIView *titleSeparator;
+@property (nonatomic, retain) UILabel *descriptionLabel;
+@property (nonatomic, retain) UIImageView *coffeeImageView;
+@property (nonatomic, retain) UILabel *relativeUpdateTimeLabel;
 
+/**
+ Sets the model used to populate the VC
+ */
 - (void)setCoffeeModel:(Coffee *)_coffeeModel;
 
 @end

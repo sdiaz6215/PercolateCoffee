@@ -18,7 +18,6 @@
 		C3A430B61AFEBE37000DA0E4 /* Coffee.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A430B51AFEBE37000DA0E4 /* Coffee.m */; };
 		C3A430B91AFEDB5D000DA0E4 /* CoffeeDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A430B81AFEDB5D000DA0E4 /* CoffeeDataManager.m */; };
 		C3A430BF1AFEF1EA000DA0E4 /* CoffeeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A430BE1AFEF1EA000DA0E4 /* CoffeeTableViewCell.m */; };
-		C3A430C11B000D6D000DA0E4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A430C01B000D6D000DA0E4 /* AVFoundation.framework */; };
 		F755BCB9A0554F5F60E6897A /* Pods_PercolateCoffee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04180014B47BD648F9DFC7DC /* Pods_PercolateCoffee.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -60,7 +59,6 @@
 		C3A430BB1AFEE96A000DA0E4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C3A430BD1AFEF1EA000DA0E4 /* CoffeeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoffeeTableViewCell.h; path = ViewControllers/CoffeeTableViewCell.h; sourceTree = "<group>"; };
 		C3A430BE1AFEF1EA000DA0E4 /* CoffeeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoffeeTableViewCell.m; path = ViewControllers/CoffeeTableViewCell.m; sourceTree = "<group>"; };
-		C3A430C01B000D6D000DA0E4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		DA4180F2FFC4C77D2E11B280 /* Pods-PercolateCoffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PercolateCoffee.release.xcconfig"; path = "Pods/Target Support Files/Pods-PercolateCoffee/Pods-PercolateCoffee.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3A430C11B000D6D000DA0E4 /* AVFoundation.framework in Frameworks */,
 				F755BCB9A0554F5F60E6897A /* Pods_PercolateCoffee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,7 +85,6 @@
 		A17122B1C2A645998A3A1235 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C3A430C01B000D6D000DA0E4 /* AVFoundation.framework */,
 				C3A430BB1AFEE96A000DA0E4 /* SystemConfiguration.framework */,
 				04180014B47BD648F9DFC7DC /* Pods_PercolateCoffee.framework */,
 				3652A277A26638D7E750C2A5 /* Pods_PercolateCoffeeTests.framework */,

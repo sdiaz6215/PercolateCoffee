@@ -25,8 +25,8 @@
     
     if(self)
     {
-        //self.contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
         self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        self.clipsToBounds = YES;
         
         constraintsWithImage = [NSMutableArray array];
         constraintsWithoutImage = [NSMutableArray array];
@@ -40,22 +40,19 @@
 -(void)initSubviews
 {
     nameLabel = [[UILabel alloc] init];
-    //nameLabel.backgroundColor = [UIColor greenColor];
     [nameLabel setTextColor:kStylingColorDarkGrey];
     [nameLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
     [nameLabel setPreferredMaxLayoutWidth:200.0];
     [self.contentView addSubview:nameLabel];
     
     descriptionLabel = [[UILabel alloc] init];
-    //descriptionLabel.backgroundColor = [UIColor blueColor];
     [descriptionLabel setTextColor:kStylingColorLightGrey];
     [descriptionLabel setTranslatesAutoresizingMaskIntoConstraints: NO];
     [descriptionLabel setNumberOfLines:2];
     [descriptionLabel setPreferredMaxLayoutWidth:200];
     [self.contentView addSubview:descriptionLabel];
     
-    coffeeImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
-    //coffeeImageView.backgroundColor = [UIColor redColor];
+    coffeeImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kStylingCellEstimatedImageSize, kStylingCellEstimatedImageSize)];
     [coffeeImageView setTranslatesAutoresizingMaskIntoConstraints:NO];
     [coffeeImageView setContentMode:UIViewContentModeScaleAspectFit];
     [self.contentView addSubview:coffeeImageView];
@@ -63,10 +60,10 @@
 
 -(void)layoutSubviews
 {
-    [super layoutSubviews];
-    
     [nameLabel setFont:kStylingCellNameFont];
     [descriptionLabel setFont:kStylingCellDescriptionFont];
+    
+    [super layoutSubviews];
 }
 
 -(void)updateConstraints
@@ -94,21 +91,21 @@
                                                                     toItem:self.contentView
                                                                  attribute:NSLayoutAttributeTop
                                                                 multiplier:1.0
-                                                                  constant:kStylingCellMarginPadding]];
+                                                                  constant:kStylingCellMarginTopPadding]];
     [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:nameLabel
                                                                  attribute:NSLayoutAttributeLeading
                                                                  relatedBy:NSLayoutRelationEqual
                                                                     toItem:self.contentView
                                                                  attribute:NSLayoutAttributeLeft
                                                                 multiplier:1.0
-                                                                  constant:kStylingCellMarginPadding]];
+                                                                  constant:kStylingCellMarginLeftPadding]];
     [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:nameLabel
                                                                  attribute:NSLayoutAttributeTrailing
                                                                  relatedBy:NSLayoutRelationLessThanOrEqual
                                                                     toItem:self.contentView
                                                                  attribute:NSLayoutAttributeRight
                                                                 multiplier:1.0
-                                                                  constant:kStylingCellMarginPadding]];
+                                                                  constant:kStylingCellMarginRightPadding]];
     
     // Description Label
     [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:descriptionLabel
@@ -124,14 +121,14 @@
                                                                     toItem:self.contentView
                                                                  attribute:NSLayoutAttributeLeft
                                                                 multiplier:1.0
-                                                                  constant:kStylingCellMarginPadding]];
+                                                                  constant:kStylingCellMarginLeftPadding]];
     [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:descriptionLabel
                                                                  attribute:NSLayoutAttributeTrailing
                                                                  relatedBy:NSLayoutRelationEqual
                                                                     toItem:self.contentView
                                                                  attribute:NSLayoutAttributeRight
                                                                 multiplier:1.0
-                                                                  constant:kStylingCellMarginPadding]];
+                                                                  constant:kStylingCellMarginRightPadding]];
     
     // Constraints for when image is not present
     [constraintsWithoutImage addObject:[NSLayoutConstraint constraintWithItem:self.contentView
@@ -140,7 +137,7 @@
                                                                     toItem:descriptionLabel
                                                                  attribute:NSLayoutAttributeBottom
                                                                 multiplier:1.0
-                                                                  constant:kStylingCellMarginPadding]];
+                                                                  constant:kStylingCellMarginBottomPadding]];
     
     // Constraints for when image is present
     [constraintsWithImage addObject:[NSLayoutConstraint constraintWithItem:coffeeImageView
@@ -156,28 +153,28 @@
                                                                     toItem:self.contentView
                                                                  attribute:NSLayoutAttributeLeft
                                                                 multiplier:1.0
-                                                                  constant:kStylingCellMarginPadding]];
+                                                                  constant:kStylingCellMarginLeftPadding]];
     [constraintsWithImage addObject:[NSLayoutConstraint constraintWithItem:coffeeImageView
                                                                  attribute:NSLayoutAttributeTrailing
                                                                  relatedBy:NSLayoutRelationLessThanOrEqual
                                                                     toItem:self.contentView
                                                                  attribute:NSLayoutAttributeRight
                                                                 multiplier:1.0
-                                                                  constant:kStylingCellMarginPadding]];
+                                                                  constant:kStylingCellMarginRightPadding]];
     [constraintsWithImage addObject:[NSLayoutConstraint constraintWithItem:coffeeImageView
                                                                  attribute:NSLayoutAttributeWidth
                                                                  relatedBy:NSLayoutRelationEqual
                                                                     toItem:nil
                                                                  attribute:NSLayoutAttributeNotAnAttribute
                                                                 multiplier:1.0
-                                                                  constant:200]];
+                                                                  constant:kStylingCellEstimatedImageSize]];
     [constraintsWithImage addObject:[NSLayoutConstraint constraintWithItem:coffeeImageView
                                                                  attribute:NSLayoutAttributeHeight
                                                                  relatedBy:NSLayoutRelationEqual
                                                                     toItem:nil
                                                                  attribute:NSLayoutAttributeNotAnAttribute
                                                                 multiplier:1.0
-                                                                  constant:200]];
+                                                                  constant:kStylingCellEstimatedImageSize]];
     
     NSLayoutConstraint *cellHeightConstraint = [NSLayoutConstraint constraintWithItem:self.contentView
                                                                             attribute:NSLayoutAttributeBottom
@@ -185,7 +182,7 @@
                                                                                toItem:coffeeImageView
                                                                             attribute:NSLayoutAttributeBottom
                                                                            multiplier:1.0
-                                                                             constant:kStylingCellMarginPadding];
+                                                                             constant:kStylingCellMarginBottomPadding];
     cellHeightConstraint.priority = 999;
     [constraintsWithImage addObject:cellHeightConstraint];
 }
@@ -202,7 +199,7 @@
         [descriptionLabel setText:newDescription];
     }];
     
-    if(coffeeModel.imageData)
+    if([coffeeModel isURLValid] && coffeeModel.imageData)
     {
         [coffeeImageView setHidden:NO];
         [coffeeImageView setImage:[UIImage imageWithData:coffeeModel.imageData]];
@@ -210,14 +207,18 @@
     else
     {
         [coffeeImageView setHidden:YES];
-        [[[CoffeeDataManager sharedManager] downloadImageData:coffeeModel.imageUrl] subscribeNext:^(NSData *imageData)
-         {
-             coffeeModel.imageData = imageData;
-             [coffeeImageView setHidden:NO];
-             [coffeeImageView setImage:[UIImage imageWithData:coffeeModel.imageData]];
-             [self setNeedsUpdateConstraints];
-             [self setNeedsLayout];
-         }];
+        
+        if([coffeeModel isURLValid])
+        {
+            [[[CoffeeDataManager sharedManager] downloadImageData:coffeeModel.imageUrl] subscribeNext:^(NSData *imageData)
+             {
+                 coffeeModel.imageData = imageData;
+                 [coffeeImageView setHidden:NO];
+                 [coffeeImageView setImage:[UIImage imageWithData:coffeeModel.imageData]];
+                 [self setNeedsUpdateConstraints];
+                 [self setNeedsLayout];
+             }];
+        }
     }
     
     [self setNeedsUpdateConstraints];

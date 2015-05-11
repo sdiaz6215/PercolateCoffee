@@ -16,6 +16,9 @@
 @property (nonatomic, retain) UILabel *descriptionLabel;
 @property (nonatomic, retain) UIImageView *coffeeImageView;
 
+/**
+ Sets the model used to populate the cell
+ */
 - (void)setCoffeeModel:(Coffee *)_coffeeModel;
 
 @end

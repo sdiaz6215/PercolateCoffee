@@ -17,6 +17,9 @@
 @end
 
 @implementation CoffeeTableViewController
+{
+    CoffeeTableViewCell *sizingCell;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -78,38 +81,21 @@
     return [[[CoffeeDataManager sharedManager] allCoffee] count];
 }
 
-//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    static CoffeeTableViewCell *sizingCell = nil;
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        sizingCell = [self.tableView dequeueReusableCellWithIdentifier:kCellIdentifierCoffeeTable];
-//    });
-//    
-//    Coffee *currentCoffeeModel = [[[CoffeeDataManager sharedManager] allCoffee] objectAtIndex:indexPath.row];
-//    [sizingCell setCoffeeModel:currentCoffeeModel];
-//    
-//    [sizingCell setNeedsLayout];
-//    [sizingCell layoutIfNeeded];
-//    
-//    CGSize size = [sizingCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-//    return size.height + 1.0f;
-//}
-
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static CoffeeTableViewCell *sizingCell = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
+    // This method is taking a dummy cell that we only allocate once and using it to calculate the row height ahead of time
+    // by having it layout it's subviews and adding constraints. We need this because we don't have any of this information when
+    // the data source asks for row height. iOS 8 has a super easy method :)
+    
+    if(!sizingCell)
         sizingCell = [self.tableView dequeueReusableCellWithIdentifier:kCellIdentifierCoffeeTable];
-    });
     
     Coffee *currentCoffeeModel = [[[CoffeeDataManager sharedManager] allCoffee] objectAtIndex:indexPath.row];
     [sizingCell setCoffeeModel:currentCoffeeModel];
     [sizingCell layoutIfNeeded];
     
     CGSize size = [sizingCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-    return size.height+1;
+    return size.height+1; // +1 is for line separator
 }
 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -137,49 +123,4 @@
     [coffeeDetailVC setCoffeeModel:currentCoffeeModel];
     [self.navigationController pushViewController:coffeeDetailVC animated:YES];
 }
-
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
-
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- } else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }
- }
- */
-
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
- }
- */
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
-
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
-
 @end
