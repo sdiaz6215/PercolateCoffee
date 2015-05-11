@@ -18,3 +18,4 @@
 * As per design supplied, app has no status bar
 * Objects returned by GET endpoint with bad/empty data were to be omitted from display
 * Share button has no functionality as no requirements were given
+* ‘Description’ value for objects returned from endpoint all seem to be truncated with an ellipses. Just so it’s clear it’s not the UILabel’s failing to expand.
