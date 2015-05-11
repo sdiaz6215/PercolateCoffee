@@ -190,14 +190,41 @@
 - (void)setCoffeeModel:(Coffee *)_coffeeModel
 {
     coffeeModel = _coffeeModel;
+
+    // Failed Reactive Cocoa Experiment, can't figure out memory issues with RACObserve. Tried weak self, as well
     
-    [RACObserve(self, coffeeModel.name) subscribeNext:^(NSString *newName){
-        [nameLabel setText:newName];
-    }];
+//    [RACObserve(self, coffeeModel.name) subscribeNext:^(NSString *newName){
+//        [nameLabel setText:newName];
+//    }];
+//    
+//    [RACObserve(self, coffeeModel.coffeeDescription) subscribeNext:^(NSString *newDescription){
+//        [descriptionLabel setText:newDescription];
+//    }];
+//    
+//    if([coffeeModel isURLValid] && coffeeModel.imageData)
+//    {
+//        [coffeeImageView setHidden:NO];
+//        [coffeeImageView setImage:[UIImage imageWithData:coffeeModel.imageData]];
+//    }
+//    else
+//    {
+//        [coffeeImageView setHidden:YES];
+//        
+//        if([coffeeModel isURLValid])
+//        {
+//            [[[CoffeeDataManager sharedManager] downloadImageData:coffeeModel.imageUrl] subscribeNext:^(NSData *imageData)
+//             {
+//                 coffeeModel.imageData = imageData;
+//                 [coffeeImageView setHidden:NO];
+//                 [coffeeImageView setImage:[UIImage imageWithData:coffeeModel.imageData]];
+//                 [self setNeedsUpdateConstraints];
+//                 [self setNeedsLayout];
+//             }];
+    //        }
+    //    }
     
-    [RACObserve(self, coffeeModel.coffeeDescription) subscribeNext:^(NSString *newDescription){
-        [descriptionLabel setText:newDescription];
-    }];
+    [nameLabel setText:coffeeModel.name];
+    [descriptionLabel setText:coffeeModel.coffeeDescription];
     
     if([coffeeModel isURLValid] && coffeeModel.imageData)
     {
